@@ -1,6 +1,11 @@
 ---
-title: "Prerelease of Infant Lang"
-date: "2021-12-31"
+title: "Meow It"
+category: "webapp"
+tags: ["infant-lang", "interpreter", "programming-language", "pre-release"]
+iconSrc: "/icons/meowit.webp"
+shortDescription: "Location Based Social Media"
+source: "https://meowit.pages.dev/"
+github: "https://github.com/meow-it/"
 ---
 
 I'm very much happy to announce that **Infant Lang** 👶 is now in a pre-release phase. 🎉🥳
@@ -16,5 +21,11 @@ Read more about Infant Lang [here](https://infant-lang.netlify.app/)
 Please report any bugs or issues you might encounter. 😌
 
 Feel free to contribute to the project. 🧚‍♀️🤗
+
+```js
+console.log("meow")
+```
+
+`npm install` is not required. 🤗
 
 Thanks for reading! 🤝
