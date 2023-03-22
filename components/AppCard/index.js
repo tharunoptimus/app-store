@@ -1,4 +1,4 @@
-import styles from "./appCard.module.css"
+import styles from "./app.module.css"
 import utilStyles from "../../styles/utils.module.css"
 import Link from "next/link"
 
