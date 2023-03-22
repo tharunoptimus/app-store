@@ -4,6 +4,7 @@ import utilStyles from "../styles/utils.module.css"
 import { getSortedPostsData } from "../lib/posts"
 import { siteTitle } from "../components/config"
 import AppCategory from "../components/AppCard"
+import SearchBar from "../components/SearchBar"
 
 export default function Home({ allPostsData }) {
 	return (
@@ -14,6 +15,7 @@ export default function Home({ allPostsData }) {
 			<section
 				className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
 			>
+			<SearchBar />
 			<AppCategory apps={allPostsData} />
 			</section>
 		</Layout>
