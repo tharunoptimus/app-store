@@ -1,4 +1,5 @@
 import styles from "./appCard.module.css"
+import utilStyles from "../../styles/utils.module.css"
 import Link from "next/link"
 
 function returnCategoryString(type) {
@@ -44,3 +45,27 @@ function Apps({ apps }) {
 	)
 }
 
+export default function AppCategory({ apps }) {
+
+	const categories = apps.map((app) => app.category)
+	const uniqueCategories = [...new Set(categories)]
+
+	return (
+		<div>
+			{uniqueCategories.map((category) => {
+				const appsInCategory = apps.filter(
+					(app) => app.category === category
+				)
+				return (
+					<div key={category}>
+						<h2 className={utilStyles.headingLg}>
+							{returnCategoryString(category)}
+						</h2>
+
+						<Apps apps={appsInCategory} />
+					</div>
+				)
+			})}
+		</div>
+	)
+}
