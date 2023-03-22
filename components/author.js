@@ -1,8 +1,7 @@
 import styles from "./layout.module.css"
 import authorStyles from "./author.module.css"
-import utilStyles from "../styles/utils.module.css"
 import Link from "next/link"
-import { authorName, aboutAuthor, blogsAbout } from "./config"
+import { authorName, githubUserName } from "./config"
 
 export default function Author() {
 	return (
@@ -30,9 +29,15 @@ export default function Author() {
 
 export function AuthorSection() {
 	return (
-		<section className={utilStyles.headingMd}>
-			<p className={authorStyles.aboutAuthor}>{aboutAuthor}</p>
-			<p className={authorStyles.blogsAbout}>{blogsAbout}</p>
-		</section>
+		<p className={authorStyles.aboutAuthor}>
+			{"Web Apps by "}
+			<a
+				href={`https://github.com/${githubUserName}`}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				@{githubUserName}
+			</a>
+		</p>
 	)
 }

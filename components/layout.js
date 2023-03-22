@@ -2,7 +2,8 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import { authorName, siteTitle } from "./config"
+import { authorName, githubUserName, siteTitle } from "./config"
+import { AuthorSection } from "./author"
 
 export default function Layout({ children, home }) {
   return (
@@ -20,13 +21,15 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/profile.png"
+              src={`https://github.com/${githubUserName}.png`}
               className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={authorName}
             />
-            <h1 className={utilStyles.heading2Xl}>{authorName}</h1>
+            <h1 className={utilStyles.heading2Xl}>
+              <AuthorSection />
+            </h1>
           </>
         ) : (
           <></>
