@@ -1,3 +1,14 @@
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
 
 .appCard {
     color: #000;

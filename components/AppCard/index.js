@@ -18,3 +18,13 @@ function AppCard({ app }) {
 	)
 }
 
+function Apps({ apps }) {
+	return (
+		<div className={styles.apps}>
+			{apps.map((app) => (
+				<AppCard app={app} key={app.id} />
+			))}
+		</div>
+	)
+}
+
