@@ -1,6 +1,21 @@
 import styles from "./appCard.module.css"
 import Link from "next/link"
 
+function returnCategoryString(type) {
+	switch (type) {
+		case "webapp":
+			return "Web Apps"
+		case "mobile":
+			return "Mobile Apps"
+		case "desktop":
+			return "Desktop Apps"
+		case "game":
+			return "Games"
+		default:
+			return "Other"
+	}
+}
+
 function AppCard({ app }) {
 	return (
 		<Link className={styles.link} href={`/posts/${app.id}`}>
