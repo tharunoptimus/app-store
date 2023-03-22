@@ -30,7 +30,7 @@ export default function Author() {
 export function AuthorSection() {
 	return (
 		<p className={authorStyles.aboutAuthor}>
-			{"Web Apps by "}
+			{"Apps by "}
 			<a
 				href={`https://github.com/${githubUserName}`}
 				target="_blank"
