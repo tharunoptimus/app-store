@@ -1,4 +1,5 @@
 import styles from "./appCard.module.css"
+import Link from "next/link"
 
 function AppCard({ app }) {
 	return (
