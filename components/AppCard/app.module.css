@@ -1,57 +1,58 @@
 .apps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-bottom: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 20px;
+	margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 480px) {
-    .apps {
-        justify-content: space-evenly;
-    }
+	.apps {
+		justify-content: space-evenly;
+	}
 }
 
 .appCard {
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 10px;
-    box-shadow: 1px 1px 0 0 #44444444;
-}
-
-@media screen and (max-width: 480px) {
-    .appCard {
-        width: 150px;
-    }
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	padding: 10px;
+	box-shadow: 1px 1px 0 0 #44444444;
 }
 
 .appCard:hover {
-    transform: scale(1.05);
-    transition: all 0.2s ease-in-out;
+	transform: scale(1.05);
+	transition: all 0.2s ease-in-out;
 }
 
 .icon {
-    margin: 10px auto;
-    border-radius: 12px;
+	margin: 10px auto;
+	border-radius: 12px;
 }
 
 .appRight {
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
 
 .appName {
-    font-size: 1.2rem;
-    font-weight: 600;
-    width: 23ch;
-    display: block;
+	font-size: 1.2rem;
+	font-weight: 600;
+	width: 23ch;
+	display: block;
 }
 
 .appDescription {
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin: 4px 0;
+	font-size: 0.8rem;
+	font-weight: 400;
+	margin: 4px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	.appCard {
+		color: #ffffffbf;
+		border-color: #ccc3;
+	}
 }

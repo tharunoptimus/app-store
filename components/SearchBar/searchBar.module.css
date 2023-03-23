@@ -33,3 +33,14 @@
 	background: transparent;
 	cursor: pointer;
 }
+
+.searchIconButton img {
+	max-width: unset;
+}
+
+@media (prefers-color-scheme: dark) {
+	.searchBar {
+		background-color: #f5f5f51a;
+    	border: 1px solid #cccccc21;
+	}
+}
