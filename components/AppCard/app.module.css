@@ -21,11 +21,12 @@
 	border-radius: 12px;
 	padding: 10px;
 	box-shadow: 1px 1px 0 0 #44444444;
+	max-width: 350px;
 }
 
 .appCard:hover {
 	transform: scale(1.05);
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 
 .icon {
@@ -54,5 +55,13 @@
 	.appCard {
 		color: #ffffffbf;
 		border-color: #ccc3;
+		border: none;
+		background: linear-gradient(314deg, #0000005e 20%, #ffffff4a 80%) right;
+		background-size: 200%;
+		transition: 0.1s ease-out;
+	}
+
+	.appCard:hover {
+		background-position: left;
 	}
 }
