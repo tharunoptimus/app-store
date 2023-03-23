@@ -64,6 +64,22 @@ function AppCategory({ apps }) {
 	const categories = apps.map((app) => app.category)
 	const uniqueCategories = [...new Set(categories)]
 
+	uniqueCategories.sort((a, b) => {
+		const order = [
+			"webapp",
+			"pwa",
+			"mobile",
+			"api",
+			"extensions",
+			"npm",
+			"game",
+			"webxr",
+			"ml",
+			"other"
+		]
+		return order.indexOf(a) - order.indexOf(b)
+	})
+
 	return (
 		<div>
 			{uniqueCategories.map((category) => {
