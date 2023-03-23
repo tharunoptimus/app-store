@@ -1,6 +1,9 @@
 import styles from "./app.module.css"
 import utilStyles from "../../styles/utils.module.css"
 import Link from "next/link"
+import SearchBar from "../SearchBar"
+import Fuse from "fuse.js"
+import { useState, useEffect } from "react"
 
 function returnCategoryString(type) {
 	switch (type) {
@@ -45,8 +48,7 @@ function Apps({ apps }) {
 	)
 }
 
-export default function AppCategory({ apps }) {
-
+function AppCategory({ apps }) {
 	const categories = apps.map((app) => app.category)
 	const uniqueCategories = [...new Set(categories)]
 
@@ -66,6 +68,45 @@ export default function AppCategory({ apps }) {
 					</div>
 				)
 			})}
+		</div>
+	)
+}
+
+export default function AppContainer({ apps }) {
+	let [queryText, setQueryText] = useState("")
+	let [showApps, setShowApps] = useState(apps)
+
+	let fuse = new Fuse(apps, {
+		keys: [
+			"title",
+			"category",
+			"tags",
+			"shortDescription",
+			"source",
+			"github",
+		],
+		threshold: 0.2,
+	})
+
+	let handleInputChange = (e) => {
+		let result = fuse.search(e.target.value)
+		let filteredApps = result.map((app) => app.item)
+
+		if (e.target.value === "") {
+			filteredApps = apps
+		}
+
+		setShowApps(filteredApps)
+		setQueryText(e.target.value)
+	}
+
+	return (
+		<div className={styles.appContainer}>
+			<SearchBar
+				queryText={queryText}
+				handleInputChange={handleInputChange}
+			/>
+			<AppCategory apps={showApps} />
 		</div>
 	)
 }
