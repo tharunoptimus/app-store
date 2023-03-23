@@ -9,12 +9,22 @@ function returnCategoryString(type) {
 	switch (type) {
 		case "webapp":
 			return "Web Apps"
+		case "pwa":
+			return "Progressive Web Apps"
 		case "mobile":
 			return "Mobile Apps"
-		case "desktop":
-			return "Desktop Apps"
+		case "api":
+			return "APIs"
+		case "extensions":
+			return "Chrome and VS Code Extensions"
+		case "npm":
+			return "NPM Packages"
 		case "game":
 			return "Games"
+		case "webxr":
+			return "WebXR"
+		case "ml":
+			return "Machine Learning Apps"
 		default:
 			return "Other"
 	}
