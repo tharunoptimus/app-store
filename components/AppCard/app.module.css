@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -11,20 +12,13 @@
     }
 }
 
-.link {
-    text-decoration: none;
-    color: #000;
-}
-
 .appCard {
     color: #000;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     border: 1px solid #ccc;
     border-radius: 12px;
-    width: 225px;
     padding: 10px;
     box-shadow: 1px 1px 0 0 #44444444;
 }
@@ -35,9 +29,8 @@
     }
 }
 
-
 .appCard:hover {
-    transform: scale(1.05) translateY(-5px);
+    transform: scale(1.05);
     transition: all 0.2s ease-in-out;
 }
 
@@ -46,16 +39,19 @@
     border-radius: 12px;
 }
 
+.appRight {
+    margin-left: 1rem;
 }
 
 .appName {
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 10px 0;
+    width: 23ch;
+    display: block;
 }
 
 .appDescription {
     font-size: 0.8rem;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 4px 0;
 }
