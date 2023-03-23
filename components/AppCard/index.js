@@ -41,8 +41,10 @@ function AppCard({ app }) {
 					height={60}
 					width={60}
 				/>
-				<span className={styles.appName}>{app.title}</span>
-				<p className={styles.appDescription}>{app.shortDescription}</p>
+				<div className={styles.appRight}>
+					<span className={styles.appName}>{app.title}</span>
+					<p className={styles.appDescription}>{app.shortDescription}</p>
+				</div>
 			</div>
 		</Link>
 	)
