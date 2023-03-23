@@ -11,6 +11,12 @@
     padding: 0 0.6rem;
 }
 
+@media screen and (max-width: 480px) {
+	.searchBar {
+		width: 90%;
+	}
+}
+
 .searchBar input[type="text"] {
 	width: 100%;
 	border: none;

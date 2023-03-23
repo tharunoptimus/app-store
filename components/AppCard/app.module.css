@@ -5,6 +5,12 @@
     gap: 20px;
 }
 
+@media screen and (max-width: 480px) {
+    .apps {
+        justify-content: space-evenly;
+    }
+}
+
 .link {
     text-decoration: none;
     color: #000;
@@ -18,9 +24,15 @@
     justify-content: flex-start;
     border: 1px solid #ccc;
     border-radius: 12px;
-    width: 150px;
+    width: 225px;
     padding: 10px;
     box-shadow: 1px 1px 0 0 #44444444;
+}
+
+@media screen and (max-width: 480px) {
+    .appCard {
+        width: 150px;
+    }
 }
 
 
