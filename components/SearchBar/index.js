@@ -1,12 +1,14 @@
 import styles from "./searchBar.module.css"
 
-export default function Search() {
+export default function Search({queryText, handleInputChange}) {
 	return (
 		<div className={styles.searchBar}>
 			<input
 				type="text"
 				placeholder="Search for apps..."
 				autoFocus={true}
+				value={queryText}
+				onChange={handleInputChange}
 			/>
 			<button className={styles.searchIconButton}>
 				<img
