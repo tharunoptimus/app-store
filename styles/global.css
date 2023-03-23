@@ -67,10 +67,31 @@ button {
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-
 @media (prefers-color-scheme: dark) {
 	body {
 		background: #000;
 		color: #ffffffbf;
 	}
+	input[type="text"],
+	button {
+		background: #000;
+		color: #ffffffbf;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #555;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #f1f1f1;
 }
