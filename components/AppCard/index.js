@@ -3,7 +3,7 @@ import utilStyles from "../../styles/utils.module.css"
 import Link from "next/link"
 import SearchBar from "../SearchBar"
 import Fuse from "fuse.js"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 function returnCategoryString(type) {
 	switch (type) {
@@ -43,7 +43,9 @@ function AppCard({ app }) {
 				/>
 				<div className={styles.appRight}>
 					<span className={styles.appName}>{app.title}</span>
-					<p className={styles.appDescription}>{app.shortDescription}</p>
+					<p className={styles.appDescription}>
+						{app.shortDescription}
+					</p>
 				</div>
 			</div>
 		</Link>
@@ -75,7 +77,7 @@ function AppCategory({ apps }) {
 			"game",
 			"webxr",
 			"ml",
-			"other"
+			"other",
 		]
 		return order.indexOf(a) - order.indexOf(b)
 	})
@@ -87,41 +89,56 @@ function AppCategory({ apps }) {
 					(app) => app.category === category
 				)
 
-				let classList = [
-					"animate__animated",
-					"animate__fadeInUp",
-				]
-
-				useEffect(() => {
-					const observer = new IntersectionObserver(
-						(entries) => {
-							entries.forEach((entry) => {
-								if (entry.isIntersecting) {
-									entry.target.classList.add(...classList)
-									entry.target.classList.remove(`${styles.hidden}`)
-								}
-							})
-						},
-						{
-							root: null,
-							rootMargin: "-120px",
-							threshold: 0.1,
-						}
-					)
-
-					observer.observe(document.querySelector(`#category-${category}`))
-				}, [])
-
 				return (
-					<div id={`category-${category}`} key={category} className={styles.hidden}>
-						<h2 className={utilStyles.headingLg}>
-							{returnCategoryString(category)}
-						</h2>
-
-						<Apps apps={appsInCategory} />
-					</div>
+					<AppCategoryCard
+						appsInCategory={appsInCategory}
+						category={category}
+					/>
 				)
 			})}
+		</div>
+	)
+}
+
+function AppCategoryCard({ category, appsInCategory }) {
+
+	let divRef = useRef(null)
+
+	useEffect(() => {
+		let classList = ["animate__animated", "animate__fadeInUp"]
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add(...classList)
+						entry.target.classList.remove(`${styles.hidden}`)
+						observer.unobserve(entry.target)
+					}
+				})
+			},
+			{
+				root: null,
+				rootMargin: "50px",
+				threshold: 0.1,
+			}
+		)
+
+		observer.observe(divRef.current)
+	}, [])
+
+	return (
+		<div
+			id={`category-${category}`}
+			key={category}
+			// className={styles.hidden}
+			ref={divRef}
+		>
+			<h2 className={utilStyles.headingLg}>
+				{returnCategoryString(category)}
+			</h2>
+
+			<Apps apps={appsInCategory} />
 		</div>
 	)
 }
