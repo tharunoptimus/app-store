@@ -1,14 +1,23 @@
+.stickyDiv {
+	/* height: 3vh; */
+	position: sticky;
+	top: 0;
+	/* margin-top: 2rem; */
+	z-index: 4;
+	background: white;
+}
+
 .searchBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 100%;
-    margin: 1rem auto 3rem;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 0 0.6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+	margin: 1rem auto 3rem;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	padding: 0 0.6rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -31,16 +40,19 @@
 	border: none;
 	outline: none;
 	background: transparent;
-	cursor: pointer;
 }
 
 .searchIconButton img {
+	cursor: pointer;
 	max-width: unset;
 }
 
 @media (prefers-color-scheme: dark) {
+	.stickyDiv {
+		background: #000000;
+	}
 	.searchBar {
 		background-color: #f5f5f51a;
-    	border: 1px solid #cccccc21;
+		border: 1px solid #cccccc21;
 	}
 }
