@@ -12,10 +12,6 @@
 	}
 }
 
-.hidden {
-	opacity: 0;
-}
-
 .appCard {
 	color: #000;
 	display: flex;

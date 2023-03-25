@@ -129,9 +129,7 @@ function AppCategoryCard({ category, appsInCategory }) {
 
 	return (
 		<div
-			id={`category-${category}`}
 			key={category}
-			// className={styles.hidden}
 			ref={divRef}
 		>
 			<h2 className={utilStyles.headingLg}>
