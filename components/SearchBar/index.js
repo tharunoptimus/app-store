@@ -2,7 +2,7 @@ import styles from "./searchBar.module.css"
 
 export default function Search({queryText, handleInputChange}) {
 	return (
-		<div className={styles.searchBar}>
+		<div className={`${styles.searchBar} animate__animated animate__delay__500ms animate__jackInTheBox`}>
 			<input
 				type="text"
 				placeholder="Search for apps..."
