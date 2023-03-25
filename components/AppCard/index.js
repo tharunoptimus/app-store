@@ -86,8 +86,34 @@ function AppCategory({ apps }) {
 				const appsInCategory = apps.filter(
 					(app) => app.category === category
 				)
+
+				let classList = [
+					"animate__animated",
+					"animate__fadeInUp",
+				]
+
+				useEffect(() => {
+					const observer = new IntersectionObserver(
+						(entries) => {
+							entries.forEach((entry) => {
+								if (entry.isIntersecting) {
+									entry.target.classList.add(...classList)
+									entry.target.classList.remove(`${styles.hidden}`)
+								}
+							})
+						},
+						{
+							root: null,
+							rootMargin: "-120px",
+							threshold: 0.1,
+						}
+					)
+
+					observer.observe(document.querySelector(`#category-${category}`))
+				}, [])
+
 				return (
-					<div key={category}>
+					<div id={`category-${category}`} key={category} className={styles.hidden}>
 						<h2 className={utilStyles.headingLg}>
 							{returnCategoryString(category)}
 						</h2>
