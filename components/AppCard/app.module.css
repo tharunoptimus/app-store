@@ -12,6 +12,21 @@
 	}
 }
 
+.categoryDiv {
+	min-height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryLeft {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;	
+}
+
 .appCard {
 	color: #000;
 	display: flex;

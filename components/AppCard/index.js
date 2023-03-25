@@ -119,7 +119,7 @@ function AppCategoryCard({ category, appsInCategory }) {
 			},
 			{
 				root: null,
-				rootMargin: "50px",
+				rootMargin: "30px",
 				threshold: 0.1,
 			}
 		)
@@ -131,10 +131,19 @@ function AppCategoryCard({ category, appsInCategory }) {
 		<div
 			key={category}
 			ref={divRef}
+			className={styles.categoryDiv}
 		>
-			<h2 className={utilStyles.headingLg}>
-				{returnCategoryString(category)}
-			</h2>
+			<div className={styles.categoryLeft}>
+				<img
+					className={styles.categoryIcon}
+					width={300}
+					src={`/categories/${category}.webp`}
+				/>
+
+				<h2 className={utilStyles.headingLg}>
+					{returnCategoryString(category)}
+				</h2>
+			</div>
 
 			<Apps apps={appsInCategory} />
 		</div>
