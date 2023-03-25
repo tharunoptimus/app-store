@@ -20,22 +20,13 @@ export default function Layout({ children, home }) {
 			<header className={styles.header}>
 				{home ? (
 					<>
-						<div className={styles.imageHolder}>
-							<img
-								src="/images/laptopguy.webp"
-								className={utilStyles.borderCircle}
-								height={224}
-								width={350}
-								alt={authorName}
-							/>
-							<img
-								src="/images/pic.webp"
-								height={72}
-								width={132}
-								alt={authorName}
-								className={styles.inprintImage}
-							/>
-						</div>
+						<img
+							src="/images/laptopguy.webp"
+							className={utilStyles.borderCircle}
+							height={350}
+							width={350}
+							alt={authorName}
+						/>
 
 						<h1 className={utilStyles.heading2Xl}>
 							<AuthorSection />

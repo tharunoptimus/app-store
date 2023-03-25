@@ -19,16 +19,3 @@
 	align-items: center;
 	gap: 10px;
 }
-
-.imageHolder {
-	position: relative;
-}
-
-.inprintImage {
-	position: absolute;
-	top: 52px;
-	left: 117px;
-	transform: rotate3d(4, -4, 0, 340deg);
-	height: auto;
-	width: 132px;
-}
