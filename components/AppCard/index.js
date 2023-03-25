@@ -138,6 +138,7 @@ function AppCategoryCard({ category, appsInCategory }) {
 					className={styles.categoryIcon}
 					width={300}
 					src={`/categories/${category}.webp`}
+					alt={category}
 				/>
 
 				<h2 className={utilStyles.headingLg}>
