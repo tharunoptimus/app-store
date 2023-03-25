@@ -25,8 +25,6 @@ export default function Search({ queryText, handleInputChange }) {
 						onChange={handleInputChange}
 					/>
 
-					<InputHints options={["hello", "world"]} />
-
 					<img
 						src="/images/search.webp"
 						alt="search"
