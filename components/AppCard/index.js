@@ -62,7 +62,7 @@ function Apps({ apps }) {
 	)
 }
 
-function AppCategory({ apps }) {
+function AppCategory({ apps, shouldShowCategoryPic }) {
 	const categories = apps.map((app) => app.category)
 	const uniqueCategories = [...new Set(categories)]
 
@@ -91,6 +91,7 @@ function AppCategory({ apps }) {
 
 				return (
 					<AppCategoryCard
+						shouldShowCategoryPic={shouldShowCategoryPic}
 						key={category}
 						appsInCategory={appsInCategory}
 						category={category}
@@ -101,8 +102,7 @@ function AppCategory({ apps }) {
 	)
 }
 
-function AppCategoryCard({ category, appsInCategory }) {
-
+function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 	let divRef = useRef(null)
 
 	useEffect(() => {
@@ -129,22 +129,21 @@ function AppCategoryCard({ category, appsInCategory }) {
 	}, [])
 
 	return (
-		<div
-			ref={divRef}
-			className={styles.categoryDiv}
-		>
-			<div className={styles.categoryLeft}>
-				<img
-					className={styles.categoryIcon}
-					width={300}
-					src={`/categories/${category}.webp`}
-					alt={category}
-				/>
-
-				<h2 className={utilStyles.headingLg}>
-					{returnCategoryString(category)}
-				</h2>
-			</div>
+		<div ref={divRef} className={styles.categoryDiv}>
+			{shouldShowCategoryPic && (
+				<div className={styles.categoryLeft}>
+					<img
+						className={styles.categoryIcon}
+						width={300}
+						src={`/categories/${category}.webp`}
+						alt={category}
+					/>
+				</div>
+			)}
+			
+			<h2 className={utilStyles.headingLg}>
+				{returnCategoryString(category)}
+			</h2>
 
 			<Apps apps={appsInCategory} />
 		</div>
@@ -154,6 +153,7 @@ function AppCategoryCard({ category, appsInCategory }) {
 export default function AppContainer({ apps }) {
 	let [queryText, setQueryText] = useState("")
 	let [showApps, setShowApps] = useState(apps)
+	let [shouldShowCategoryPic, setShouldShowCategoryPic] = useState(true)
 
 	let fuse = new Fuse(apps, {
 		keys: [
@@ -163,7 +163,7 @@ export default function AppContainer({ apps }) {
 			"shortDescription",
 			"source",
 			"github",
-			"stack"
+			"stack",
 		],
 		threshold: 0.3,
 	})
@@ -176,6 +176,12 @@ export default function AppContainer({ apps }) {
 			filteredApps = apps
 		}
 
+		if (filteredApps.length < apps.length) {
+			setShouldShowCategoryPic(false)
+		} else {
+			setShouldShowCategoryPic(true)
+		}
+
 		setShowApps(filteredApps)
 		setQueryText(e.target.value)
 	}
@@ -186,7 +192,10 @@ export default function AppContainer({ apps }) {
 				queryText={queryText}
 				handleInputChange={handleInputChange}
 			/>
-			<AppCategory apps={showApps} />
+			<AppCategory
+				apps={showApps}
+				shouldShowCategoryPic={shouldShowCategoryPic}
+			/>
 		</div>
 	)
 }
