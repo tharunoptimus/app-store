@@ -91,6 +91,7 @@ function AppCategory({ apps }) {
 
 				return (
 					<AppCategoryCard
+						key={category}
 						appsInCategory={appsInCategory}
 						category={category}
 					/>
@@ -129,7 +130,6 @@ function AppCategoryCard({ category, appsInCategory }) {
 
 	return (
 		<div
-			key={category}
 			ref={divRef}
 			className={styles.categoryDiv}
 		>
