@@ -54,3 +54,102 @@
 	flex-direction: column;
 	gap: 15px;
 }
+
+.actionButtons {
+	display: flex;
+    gap: 20px;
+}
+
+.amongUsButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 0 10px;
+	color: white;
+	text-shadow: 2px 2px rgb(116, 116, 116);
+	text-transform: uppercase;
+	border: none;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 17px;
+	background-color: hsl(49deg 98% 60%);
+	border-radius: 11px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.amongUsButton:active {
+	transform: scale(0.9);
+	transition: all 100ms ease;
+}
+
+.amongUsButton svg {
+	transition: all 0.5s ease;
+	z-index: 2;
+}
+
+.play {
+	transition: all 0.5s ease;
+	transition-delay: 300ms;
+}
+
+.amongUsButton:hover svg {
+	transform: scale(3) translate(50%);
+}
+
+.now {
+	position: absolute;
+	left: 0;
+	transform: translateX(-100%);
+	transition: all 0.5s ease;
+	z-index: 2;
+}
+
+.amongUsButton:hover .now {
+	transform: translateX(10px);
+	transition-delay: 300ms;
+}
+
+.amongUsButton:hover .play {
+	transform: translateX(200%);
+	transition-delay: 300ms;
+}
+
+.viewSourceButton {
+	display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.5em 1.5em 0.5em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #9b59b6, #8e44ad);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 11px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.viewSourceButton svg {
+	margin-right: 3px;
+	transform: rotate(30deg);
+	transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.viewSourceButton span {
+	transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.viewSourceButton:hover svg {
+	transform: translateX(5px) rotate(90deg);
+}
+
+.viewSourceButton:hover span {
+	transform: translateX(7px);
+}
+
