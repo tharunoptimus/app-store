@@ -46,6 +46,17 @@ function BackToHomeLink() {
 	)
 }
 
+function AppImage({ src, title }) {
+	return (
+		<img
+			src={src}
+			alt={title}
+			height={100}
+			width={100}
+			className={`${utilStyles.appImage} animate__animated animate__rollIn`}
+		/>
+	)
+}
 
 function AppTitle({ title }) {
 	return (
