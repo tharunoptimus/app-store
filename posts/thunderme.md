@@ -5,8 +5,8 @@ date: "2021-12-31"
 tags: ["messenger", "status", "social media"]
 iconSrc: "/icons/thunderme.webp"
 shortDescription: "Share your thoughts instantly"
-source: "https://meowit.pages.dev/"
-github: "https://github.com/meow-it/"
+source: "https://thunderme.adaptable.app/"
+github: "https://github.com/tharunoptimus/thunderme"
 ---
 
 # About the App
