@@ -55,6 +55,38 @@
 	gap: 15px;
 }
 
+.appImage {
+	border-radius: 20px;
+}
+
+.shortDescription {
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.tagsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 1rem 0;
+}
+
+.tag {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-block;
+	border-radius: 8px;
+	padding: 0.5rem 1rem;
+	margin: 0 0.5rem 0.5rem 0;
+	font-size: 0.8rem;
+	line-height: 1;
+	border: 1px solid #fafafa;
+}
+
+.tag:hover {
+	background: #fafafa;
+}
+
 .actionButtons {
 	display: flex;
     gap: 20px;
@@ -153,3 +185,12 @@
 	transform: translateX(7px);
 }
 
+@media (prefers-color-scheme: dark) {
+	.tag {
+		border: unset;
+		background-color: #f1f1f121;
+	}
+	.tag:hover {
+		background: #f1f1f142;
+	}
+}
