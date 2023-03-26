@@ -8,7 +8,8 @@
       "default",
       {
         "ignore": [
-          "hyphens"
+          "hyphens",
+          "-webkit-tap-highlight-color"
         ]
       }
     ]
