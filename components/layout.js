@@ -22,7 +22,7 @@ export default function Layout({ children, home }) {
 					<>
 						<img
 							src="/images/laptopguy.webp"
-							className={utilStyles.borderCircle}
+							className={`${utilStyles.borderCircle} animate__animated animate__bounceInDown`}
 							height={350}
 							width={350}
 							alt={authorName}
@@ -37,11 +37,6 @@ export default function Layout({ children, home }) {
 				)}
 			</header>
 			<main>{children}</main>
-			{!home && (
-				<div className={styles.backToHome}>
-					<Link href="/">← Back to home</Link>
-				</div>
-			)}
 		</div>
 	)
 }
