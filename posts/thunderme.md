@@ -2,7 +2,7 @@
 title: "Thunder Me"
 category: "webapp"
 date: "2021-12-31"
-tags: ["infant-lang", "interpreter", "programming-language", "pre-release"]
+tags: ["messenger", "status", "social media"]
 iconSrc: "/icons/thunderme.webp"
 shortDescription: "Share your thoughts instantly"
 source: "https://meowit.pages.dev/"
