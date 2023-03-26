@@ -57,6 +57,15 @@ function AppTitle({ title }) {
 	)
 }
 
+function ShortDescription({ description }) {
+	return (
+		<span
+			className={`${utilStyles.shortDescription} animate__animated animate__delay__500ms animate__fadeInUp`}
+		>
+			{description}
+		</span>
+	)
+}
 
 function AmongUsButton({ github }) {
 
