@@ -1,41 +1,56 @@
-import Head from 'next/head'
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import utilStyles from '../../styles/utils.module.css'
-import Author from "../../components/author";
+import Head from "next/head"
+import Link from "next/link"
+import Layout from "../../components/layout"
+import { getAllPostIds, getPostData } from "../../lib/posts"
+import layoutStyles from "../../components/layout.module.css"
+import utilStyles from "../../styles/utils.module.css"
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
-  return {
-    props: {
-      postData
-    }
-  }
+	const postData = await getPostData(params.id)
+	return {
+		props: {
+			postData,
+		},
+	}
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
-  return {
-    paths,
-    fallback: false
-  }
+	const paths = getAllPostIds()
+	return {
+		paths,
+		fallback: false,
+	}
 }
 
 export default function Post({ postData }) {
-  return (
-    <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Author />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
-    </Layout>
-  )
+	return (
+		<Layout>
+			<Head>
+				<title>{postData.title}</title>
+			</Head>
+			<article>
+				<BackToHomeLink />
+
+				<AppImage src={postData.iconSrc} title={postData.title} />
+
+				<AppTitle title={postData.title} />
+
+				<ShortDescription description={postData.shortDescription} />
+
+				<AppTags tags={postData.tags} />
+
+				<ActionButtons
+					source={postData.source}
+					github={postData.github}
+				/>
+
+				<div
+					className={`animate__animated animate__delay__500ms animate__fadeInUp`}
+					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+				/>
+			</article>
+		</Layout>
+	)
 }
 
 function BackToHomeLink() {
