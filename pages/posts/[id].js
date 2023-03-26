@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import Layout from "../../components/layout"
+import { githubUserName, siteTitle } from "../../components/config"
 import { getAllPostIds, getPostData } from "../../lib/posts"
 import layoutStyles from "../../components/layout.module.css"
 import utilStyles from "../../styles/utils.module.css"
@@ -24,10 +24,18 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
 	return (
-		<Layout>
+		<div className={layoutStyles.container}>
 			<Head>
+				<link
+					rel="icon"
+					href={`https://github.com/${githubUserName}.png`}
+				/>
+				<meta name="description" content={siteTitle} />
+				<meta name="og:title" content={siteTitle} />
+				<meta name="twitter:card" content="summary_large_image" />
 				<title>{postData.title}</title>
 			</Head>
+			<main>
 			<article>
 				<BackToHomeLink />
 
@@ -49,7 +57,8 @@ export default function Post({ postData }) {
 					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
 				/>
 			</article>
-		</Layout>
+			</main>
+		</div>
 	)
 }
 

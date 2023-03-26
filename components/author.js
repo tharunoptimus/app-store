@@ -1,17 +1,8 @@
-import styles from "./layout.module.css"
 import authorStyles from "./author.module.css"
-import Link from "next/link"
-import { authorName, githubUserName } from "./config"
+import { githubUserName } from "./config"
 import { Typewriter } from "react-simple-typewriter"
 
 export default function Author() {
-	return (
-		<>
-		</>
-	)
-}
-
-export function AuthorSection() {
 	return (
 		<p className={`${authorStyles.aboutAuthor} animate__animated animate__bounceInUp`}>
 			<Typewriter
