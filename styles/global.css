@@ -19,7 +19,7 @@ body {
 }
 
 a {
-	color: #0070f3;
+	color: #0054b7;
 	text-decoration: none;
 }
 
@@ -99,6 +99,10 @@ button {
 	button {
 		background: #000;
 		color: #ffffffbf;
+	}
+
+	a {
+		color: #2a99ff;
 	}
 
 	::-webkit-scrollbar-track {
