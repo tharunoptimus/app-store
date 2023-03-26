@@ -163,6 +163,7 @@ export default function AppContainer({ apps }) {
 			"shortDescription",
 			"source",
 			"github",
+			"stack"
 		],
 		threshold: 0.3,
 	})
