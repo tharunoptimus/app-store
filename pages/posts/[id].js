@@ -37,3 +37,11 @@ export default function Post({ postData }) {
     </Layout>
   )
 }
+
+function BackToHomeLink() {
+	return (
+		<div className={layoutStyles.backToHome}>
+			<Link scroll={false} href="/">← Back to home</Link>
+		</div>
+	)
+}
