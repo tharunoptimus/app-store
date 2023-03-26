@@ -87,6 +87,30 @@
 	background: #fafafa;
 }
 
+.techStackIconsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 1rem 0;
+}
+
+.techStackIconDiv:hover {
+	transform: scale(1.1);
+	transition: all 0.2s ease;
+}
+
+.techStackIcon {
+	background: #ffffff;
+    border-radius: 50%;
+    padding: 6px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.techStackIcon:hover {
+	transform: scale(1.1);
+}
+
 .actionButtons {
 	display: flex;
     gap: 20px;
