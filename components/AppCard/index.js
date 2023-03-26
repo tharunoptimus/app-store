@@ -32,7 +32,7 @@ function returnCategoryString(type) {
 
 function AppCard({ app }) {
 	return (
-		<Link className={styles.link} href={`/posts/${app.id}`}>
+		<Link className={styles.link} href={`/app/${app.id}`}>
 			<div className={styles.appCard}>
 				<img
 					className={styles.icon}

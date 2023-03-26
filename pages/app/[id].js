@@ -47,6 +47,8 @@ export default function Post({ postData }) {
 
 				<AppTags tags={postData.tags} />
 
+				<TechStackIcons stack={postData.stack} />
+
 				<ActionButtons
 					source={postData.source}
 					github={postData.github}
@@ -109,6 +111,25 @@ function AppTags({ tags }) {
 				<span key={id} className={utilStyles.tag}>
 					{tag}
 				</span>
+			))}
+		</div>
+	)
+}
+
+function TechStackIcons({stack}) {
+	return (
+		<div className={utilStyles.techStackIconsContainer}>
+			{stack.map((tech, id) => (
+				<div key={id} className={utilStyles.techStackIconDiv}>
+					<img
+					src={`/stack/${tech}.svg`}
+					alt={tech}
+					title={tech}
+					height={45}
+					width={45}
+					className={`${utilStyles.techStackIcon} animate__animated animate__rollIn`}
+				/>
+				</div>
 			))}
 		</div>
 	)
