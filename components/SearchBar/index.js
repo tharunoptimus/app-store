@@ -32,6 +32,7 @@ export default function Search({ queryText, handleInputChange }) {
 						width={20}
 					/>
 				</div>
+				&nbsp;
 			</div>
 		</>
 	)

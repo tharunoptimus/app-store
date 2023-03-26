@@ -1,10 +1,9 @@
 .stickyDiv {
-	/* height: 3vh; */
 	position: sticky;
 	top: 0;
-	/* margin-top: 2rem; */
 	z-index: 4;
 	background: white;
+	font-size: 0rem;
 }
 
 .searchBar {
@@ -14,7 +13,7 @@
 	align-items: center;
 	width: 60%;
 	height: 100%;
-	margin: 1rem auto 3rem;
+	margin: 1rem auto 1rem;
 	background-color: #f5f5f5;
 	border-radius: 10px;
 	padding: 0 0.6rem;
