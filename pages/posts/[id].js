@@ -47,6 +47,17 @@ function BackToHomeLink() {
 }
 
 
+function AppTitle({ title }) {
+	return (
+		<h1
+			className={`${utilStyles.headingXl} animate__animated animate__fadeInUp`}
+		>
+			{title}
+		</h1>
+	)
+}
+
+
 function AmongUsButton({ github }) {
 
 	let handleClick = () => {
