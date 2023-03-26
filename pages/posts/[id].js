@@ -132,3 +132,11 @@ function LaunchButton({ source }) {
 	)
 }
 
+function ActionButtons({ source, github }) {
+	return (
+		<div className={utilStyles.actionButtons}>
+			{github && <LaunchButton source={source} />}
+			{source && <AmongUsButton github={github} />}
+		</div>
+	)
+}
