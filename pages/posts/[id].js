@@ -65,7 +65,7 @@ export default function Post({ postData }) {
 function BackToHomeLink() {
 	return (
 		<div className={layoutStyles.backToHome}>
-			<Link scroll={false} href="/">← Back to home</Link>
+			<Link scroll={false} href="/">← Back to All Apps</Link>
 		</div>
 	)
 }
