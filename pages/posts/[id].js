@@ -67,6 +67,18 @@ function ShortDescription({ description }) {
 	)
 }
 
+function AppTags({ tags }) {
+	return (
+		<div className={utilStyles.tagsContainer}>
+			{tags.map((tag, id) => (
+				<span key={id} className={utilStyles.tag}>
+					{tag}
+				</span>
+			))}
+		</div>
+	)
+}
+
 function AmongUsButton({ github }) {
 
 	let handleClick = () => {
