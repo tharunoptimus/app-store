@@ -13,7 +13,7 @@ export default function Author() {
 
 export function AuthorSection() {
 	return (
-		<p className={`${authorStyles.aboutAuthor} animate__animated animate__flipInX`}>
+		<p className={`${authorStyles.aboutAuthor} animate__animated animate__bounceInUp`}>
 			<Typewriter
 				words={["Web Apps", "PWAs", "Packages", "APIs", "Extensions", "Languages", "Games", "XR Apps", "Apps"]}
 				loop={5}
