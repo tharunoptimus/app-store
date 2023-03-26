@@ -8,3 +8,7 @@ shortDescription: "Gay Meter - no offense"
 source: "https://play.google.com/store/apps/details?id=dev.pages.gaymeter.twa"
 github: "https://github.com/tharunoptimus/support-lgbt"
 ---
+
+# About the App
+
+Introducing Gay Meter - no offense, a fun app that does some math on a string and returns a percent that you can prank with your friends. Not necessarily their real ethnicity. Just enter a name and let the fun begin. 
