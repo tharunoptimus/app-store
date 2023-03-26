@@ -7,6 +7,7 @@ iconSrc: "/icons/human-anatomy.webp"
 shortDescription: "Human Anatomy in VR"
 source: "https://human-anatomy.pages.dev/"
 github: "https://github.com/tharunoptimus/human-anatomy"
+stack: [html, css, javascript, webxr, worksOffline, aframe]
 ---
 
 # About the App

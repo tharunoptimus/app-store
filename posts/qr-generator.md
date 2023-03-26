@@ -7,6 +7,7 @@ iconSrc: "/icons/qr.webp"
 shortDescription: "Generate QR Codes"
 source: "https://qrapigen.herokuapp.com/?data=meow"
 github: "https://github.com/tharunoptimus/qrcode-generator-api.git"
+stack: [npm, express, nodejs]
 ---
 
 # About the App

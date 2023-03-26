@@ -7,6 +7,7 @@ iconSrc: "/icons/short.webp"
 shortDescription: "Shorten your URLs"
 source: "http://short.cyclic.app/"
 github: "https://github.com/tharunoptimus/short"
+stack: [html, css, javascript, jquery, pwa]
 ---
 
 # About the App

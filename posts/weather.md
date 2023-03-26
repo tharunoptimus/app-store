@@ -7,6 +7,7 @@ iconSrc: "/icons/weather.webp"
 shortDescription: "Know the weather!"
 source: "https://findcurrentweather.netlify.app"
 github: "https://github.com/tharunoptimus/weather"
+stack: [react, javascript, pwa]
 ---
 
 # About the App

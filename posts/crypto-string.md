@@ -7,6 +7,7 @@ iconSrc: "/icons/npm.webp"
 shortDescription: "Generate crypto random strings"
 source: "https://www.npmjs.com/package/crypto-string"
 github: "https://github.com/tharunoptimus/crypto-string"
+stack: [npm, javascript]
 ---
 
 # About the App

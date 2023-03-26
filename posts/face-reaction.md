@@ -7,6 +7,7 @@ iconSrc: "/icons/facereaction.webp"
 shortDescription: "Detect Face Reaction"
 source: "https://detect-face-emotions.netlify.app/"
 github: "https://github.com/tharunoptimus/face-reaction"
+stack: [javascript, pwa, worksOffline, tensorflowjs, ml]
 ---
 
 # About the App

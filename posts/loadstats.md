@@ -7,6 +7,7 @@ iconSrc: "/icons/loadstats.webp"
 shortDescription: "Load Stats of Websites"
 source: "https://chrome.google.com/webstore/detail/load-stats/mcimnmibpilhcpmalceffnaabmdfodhh"
 github: "https://github.com/tharunoptimus/load-time"
+stack: [chrome, javascript]
 ---
 
 # About the App

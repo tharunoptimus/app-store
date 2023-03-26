@@ -7,6 +7,7 @@ iconSrc: "/icons/endict.webp"
 shortDescription: "Dictionary on your terminal"
 source: "https://www.npmjs.com/package/endict"
 github: "https://github.com/tharunoptimus/endict"
+stack: [npm, javascript]
 ---
 
 # About the App

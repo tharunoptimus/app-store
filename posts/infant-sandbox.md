@@ -7,6 +7,7 @@ iconSrc: "/icons/infant.webp"
 shortDescription: "Sandbox API for Infant Lang"
 source: "https://infant-lang-playground.netlify.app/"
 github: "https://github.com/infant-lang/sandbox.git"
+stack: [go, mux]
 ---
 
 # About the App

@@ -7,6 +7,7 @@ iconSrc: "/icons/firelock.webp"
 shortDescription: "2FA OTP Generator"
 source: "https://play.google.com/store/apps/details?id=dev.pages.firelock.twa"
 github: "https://github.com/Fire-OAuth/fire-lock"
+stack: [android, javascript, react, twa, worksOffline]
 ---
 
 # About the App

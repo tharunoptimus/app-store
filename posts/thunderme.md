@@ -7,6 +7,7 @@ iconSrc: "/icons/thunderme.webp"
 shortDescription: "Share your thoughts instantly"
 source: "https://thunderme.adaptable.app/"
 github: "https://github.com/tharunoptimus/thunderme"
+stack: [pug, css, bootstrap, javascript, jquery, express, mongodb, nodejs, pwa]
 ---
 
 # About the App

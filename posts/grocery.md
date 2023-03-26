@@ -7,6 +7,7 @@ iconSrc: "/icons/grocery.webp"
 shortDescription: "List up your grocery"
 source: "https://idb-grocery.netlify.app/"
 github: "https://github.com/tharunoptimus/grocery"
+stack: [html, css, javascript, jquery, pwa, worksOffline]
 ---
 
 # About the App

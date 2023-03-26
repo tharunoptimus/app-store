@@ -7,6 +7,7 @@ iconSrc: "/icons/vrbot.webp"
 shortDescription: "Enhance learning with VR"
 source: "https://vr-bot.pages.dev/"
 github: "https://github.com/tharunoptimus/vr-bot"
+stack: [html, css, javascript, webxr, worksOffline, aframe]
 ---
 
 # About the App

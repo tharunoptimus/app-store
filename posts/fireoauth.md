@@ -7,6 +7,7 @@ iconSrc: "/icons/fire.webp"
 shortDescription: "Passwordless Authenticator"
 source: "https://fireoauth.netlify.app/"
 github: "https://github.com/Fire-OAuth"
+stack: [html, css, javascript, express, mongodb, nodejs, pwa, worksOffline]
 ---
 
 # About the App

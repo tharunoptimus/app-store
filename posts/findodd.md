@@ -7,6 +7,7 @@ iconSrc: "/icons/findodd.webp"
 shortDescription: "Find the sus word"
 source: "https://www.npmjs.com/package/find-the-odd"
 github: "https://github.com/tharunoptimus/find-the-odd"
+stack: [npm, javascript]
 ---
 
 # About the App

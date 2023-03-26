@@ -7,6 +7,7 @@ iconSrc: "/icons/placeholder.webp"
 shortDescription: "Generate Placeholder Images"
 source: "https://placeholder-image-api.herokuapp.com/"
 github: "https://github.com/tharunoptimus/placeholder-image-data-url"
+stack: [npm, express, nodejs]
 ---
 
 # About the App

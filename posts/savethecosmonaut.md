@@ -7,6 +7,7 @@ iconSrc: "/icons/savecosmonaut.webp"
 shortDescription: "Save the Cosmonaut"
 source: "http://cosmonaut.surge.sh/"
 github: "https://github.com/tharunoptimus/save-the-cosmonaut"
+stack: [javascript, html, css, worksOffline]
 ---
 
 # About the App

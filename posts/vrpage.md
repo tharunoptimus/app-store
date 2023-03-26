@@ -7,6 +7,7 @@ iconSrc: "/icons/vrpages.webp"
 shortDescription: "Book reading and Story telling"
 source: "https://vrbook.pages.dev/"
 github: "https://github.com/tharunoptimus/vr-book"
+stack: [html, css, javascript, webxr, worksOffline, aframe]
 ---
 
 # About the App

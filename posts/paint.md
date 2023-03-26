@@ -7,6 +7,7 @@ iconSrc: "/icons/paint.webp"
 shortDescription: "Shareable Paint App"
 source: "https://paint.cyclic.app/"
 github: "https://github.com/tharunoptimus/paint"
+stack: [pug, css, javascript, express, mongodb, nodejs, pwa]
 ---
 
 # About the App

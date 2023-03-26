@@ -7,6 +7,7 @@ iconSrc: "/icons/search.webp"
 shortDescription: "It's a search engine"
 source: "https://search.cyclic.app/"
 github: "https://github.com/tharunoptimus/search-engine"
+stack: [pug, css, javascript, jquery, express, mongodb, pwa]
 ---
 
 # About the App

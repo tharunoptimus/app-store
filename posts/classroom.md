@@ -7,6 +7,7 @@ iconSrc: "/icons/classroom.webp"
 shortDescription: "Classroom Management"
 source: "https://classroom.adaptable.app/"
 github: "https://github.com/tharunoptimus/classroom"
+stack: [pug, css, bootstrap, javascript, jquery, express, mongodb, nodejs, pwa]
 ---
 
 # About the App
