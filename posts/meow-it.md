@@ -7,7 +7,7 @@ iconSrc: "/icons/meowit.webp"
 shortDescription: "Location Based Social Media"
 source: "https://meowit.pages.dev/"
 github: "https://github.com/meow-it/"
-stack: [html, css, javascript, express, mongodb, pwa, worksOffline]
+stack: [html, css, javascript, express, mongodb, pwa, worksoffline]
 ---
 
 # About the App

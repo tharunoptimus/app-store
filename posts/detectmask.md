@@ -7,7 +7,7 @@ iconSrc: "/icons/facemask.webp"
 shortDescription: "Detect Face Mask"
 source: "https://detectmask.netlify.app/"
 github: "https://github.com/Harshitha-246/FaceMaskDetection"
-stack: [javascript, pwa, worksOffline, tensorflowjs, ml]
+stack: [javascript, pwa, worksoffline, tensorflowjs, ml]
 ---
 
 # About the App

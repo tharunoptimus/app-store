@@ -7,7 +7,7 @@ iconSrc: "/icons/css.webp"
 shortDescription: "Convert CSS Units"
 source: "https://github.com/tharunoptimus/css-units/releases/tag/1.0.0"
 github: "https://github.com/tharunoptimus/css-units"
-stack: [vscode, javascript, worksOffline]
+stack: [vscode, javascript, worksoffline]
 ---
 
 # About the App

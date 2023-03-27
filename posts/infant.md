@@ -7,7 +7,7 @@ iconSrc: "/icons/infant.webp"
 shortDescription: "Esoteric Programming Language"
 source: "https://infant.pages.dev"
 github: "https://github.com/infant-lang"
-stack: [nextjs, javascript, go, pwa, worksOffline]
+stack: [nextjs, javascript, go, pwa, worksoffline]
 ---
 
 Introducing Infant Lang - an esoteric programming language designed to be simple and intuitive for infants to use! With Infant Lang, you can create programs using conditions, loops, and even concurrent programming.

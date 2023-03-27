@@ -7,7 +7,7 @@ iconSrc: "/icons/coolsw.webp"
 shortDescription: "Generate a Service Worker"
 source: "https://coolsw.pages.dev/"
 github: "https://github.com/tharunoptimus/coolsw"
-stack: [html, css, javascript, pwa, worksOffline]
+stack: [html, css, javascript, pwa, worksoffline]
 ---
 
 # About the App

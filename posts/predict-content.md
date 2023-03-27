@@ -7,7 +7,7 @@ iconSrc: "/icons/predictcontent.webp"
 shortDescription: "Predict Image Content"
 source: "https://predict-image.netlify.app/"
 github: "https://github.com/tharunoptimus/predict-image-content"
-stack: [javascript, pwa, worksOffline, tensorflowjs, ml]
+stack: [javascript, pwa, worksoffline, tensorflowjs, ml]
 ---
 
 # About the App

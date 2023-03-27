@@ -7,7 +7,7 @@ iconSrc: "/icons/gaymeter.webp"
 shortDescription: "Gay Meter - no offense"
 source: "https://play.google.com/store/apps/details?id=dev.pages.gaymeter.twa"
 github: "https://github.com/tharunoptimus/support-lgbt"
-stack: [android, javascript, twa, worksOffline]
+stack: [android, javascript, worksoffline]
 ---
 
 # About the App
