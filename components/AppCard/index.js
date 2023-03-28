@@ -186,6 +186,19 @@ export default function AppContainer({ apps }) {
 		setQueryText(e.target.value)
 	}
 
+	
+	useEffect(() => {
+		let query = localStorage?.getItem("query")
+	
+		if(query != "" && query != null) {
+			handleInputChange({target: {value: query}})
+			setQueryText(query)
+		}
+
+		localStorage?.setItem("query", "")
+
+	})
+
 	return (
 		<div className={styles.appContainer}>
 			<SearchBar
