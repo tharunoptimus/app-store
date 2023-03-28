@@ -4,6 +4,7 @@ import { githubUserName, siteTitle } from "../../components/config"
 import { getAllPostIds, getPostData } from "../../lib/posts"
 import layoutStyles from "../../components/layout.module.css"
 import utilStyles from "../../styles/utils.module.css"
+import { useRef, useEffect } from "react"
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id)
@@ -227,4 +228,24 @@ function ActionButtons({ source, github }) {
 			{source && <AmongUsButton github={github} />}
 		</div>
 	)
+}
+
+function Comments() {
+	const ref = useRef(null)
+
+	useEffect(() => {
+		const scriptElement = document.createElement("script")
+		scriptElement.async = true
+		scriptElement.crossOrigin = "anonymous"
+		scriptElement.src = "https://utteranc.es/client.js"
+
+		scriptElement.setAttribute("issue-term", "pathname")
+		scriptElement.setAttribute("label", "Comment 🐶⚡")
+		scriptElement.setAttribute("repo", "tharunoptimus/app-store")
+		scriptElement.setAttribute("theme", "preferred-color-scheme")
+
+		ref.current?.appendChild(scriptElement)
+	}, [])
+
+	return <div ref={ref} />
 }
