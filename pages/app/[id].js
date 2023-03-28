@@ -115,11 +115,24 @@ function AppTags({ tags }) {
 	return (
 		<div className={utilStyles.tagsContainer}>
 			{tags.map((tag, id) => (
-				<span key={id} className={utilStyles.tag}>
-					{tag}
-				</span>
+				<Tag key={id} tag={tag} />
 			))}
 		</div>
+	)
+}
+
+function Tag({ tag }) {
+
+	let handleClick = () => {
+		if(typeof window !== "undefined") {
+			localStorage.setItem("query", tag)
+		}
+	}
+
+	return (
+		<Link href={`/`} onClick={handleClick}>
+			<span className={utilStyles.tag}>{tag}</span>
+		</Link>
 	)
 }
 
