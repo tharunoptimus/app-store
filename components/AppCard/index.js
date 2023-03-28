@@ -120,7 +120,7 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 			},
 			{
 				root: null,
-				rootMargin: "30px",
+				rootMargin: "100px",
 				threshold: 0.1,
 			}
 		)
