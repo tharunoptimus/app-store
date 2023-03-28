@@ -191,6 +191,7 @@ export default function AppContainer({ apps }) {
 			<SearchBar
 				queryText={queryText}
 				handleInputChange={handleInputChange}
+				setQueryText={setQueryText}
 			/>
 			<AppCategory
 				apps={showApps}
