@@ -1,29 +1,29 @@
 import Head from "next/head"
 import Link from "next/link"
 import { githubUserName, siteTitle } from "../../components/config"
-import { getAllPostIds, getPostData } from "../../lib/posts"
+import { getAllAppIds, getAppData } from "../../lib/apps"
 import layoutStyles from "../../components/layout.module.css"
 import utilStyles from "../../styles/utils.module.css"
 import { useRef, useEffect } from "react"
 
 export async function getStaticProps({ params }) {
-	const postData = await getPostData(params.id)
+	const appData = await getAppData(params.id)
 	return {
 		props: {
-			postData,
+			appData,
 		},
 	}
 }
 
 export async function getStaticPaths() {
-	const paths = getAllPostIds()
+	const paths = getAllAppIds()
 	return {
 		paths,
 		fallback: false,
 	}
 }
 
-export default function Post({ postData }) {
+export default function Post({ appData }) {
 	return (
 		<div className={layoutStyles.container}>
 			<Head>
@@ -34,31 +34,31 @@ export default function Post({ postData }) {
 				<meta name="description" content={siteTitle} />
 				<meta name="og:title" content={siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
-				<title>{postData.title}</title>
+				<title>{appData.title}</title>
 			</Head>
 			<main>
 				<article>
 					<BackToHomeLink />
 
-					<AppImage src={postData.iconSrc} title={postData.title} />
+					<AppImage src={appData.iconSrc} title={appData.title} />
 
-					<AppTitle title={postData.title} />
+					<AppTitle title={appData.title} />
 
-					<ShortDescription description={postData.shortDescription} />
+					<ShortDescription description={appData.shortDescription} />
 
-					<AppTags tags={postData.tags} />
+					<AppTags tags={appData.tags} />
 
-					<TechStackIcons stack={postData.stack} />
+					<TechStackIcons stack={appData.stack} />
 
 					<ActionButtons
-						source={postData.source}
-						github={postData.github}
+						source={appData.source}
+						github={appData.github}
 					/>
 
 					<div
 						className={`animate__animated animate__delay__500ms animate__fadeInUp`}
 						dangerouslySetInnerHTML={{
-							__html: postData.contentHtml,
+							__html: appData.contentHtml,
 						}}
 					/>
 

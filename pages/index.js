@@ -1,12 +1,12 @@
 import Head from "next/head"
 import utilStyles from "../styles/utils.module.css"
-import { getSortedPostsData } from "../lib/posts"
+import { getSortedAppsData } from "../lib/apps"
 import { siteTitle, authorName, githubUserName } from "../components/config"
 import styles from "../components/layout.module.css"
 import AppContainer from "../components/AppCard"
 import Author from "../components/author"
 
-export default function Home({ allPostsData }) {
+export default function Home({ allAppsData }) {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
 				<section
 					className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
 				>
-					<AppContainer apps={allPostsData} />
+					<AppContainer apps={allAppsData} />
 				</section>
 			</main>
 		</div>
@@ -53,10 +53,10 @@ function Header() {
 }
 
 export async function getStaticProps() {
-	const allPostsData = getSortedPostsData()
+	const allAppsData = getSortedAppsData()
 	return {
 		props: {
-			allPostsData,
+			allAppsData,
 		},
 	}
 }
