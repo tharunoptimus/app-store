@@ -37,29 +37,33 @@ export default function Post({ postData }) {
 				<title>{postData.title}</title>
 			</Head>
 			<main>
-			<article>
-				<BackToHomeLink />
+				<article>
+					<BackToHomeLink />
 
-				<AppImage src={postData.iconSrc} title={postData.title} />
+					<AppImage src={postData.iconSrc} title={postData.title} />
 
-				<AppTitle title={postData.title} />
+					<AppTitle title={postData.title} />
 
-				<ShortDescription description={postData.shortDescription} />
+					<ShortDescription description={postData.shortDescription} />
 
-				<AppTags tags={postData.tags} />
+					<AppTags tags={postData.tags} />
 
-				<TechStackIcons stack={postData.stack} />
+					<TechStackIcons stack={postData.stack} />
 
-				<ActionButtons
-					source={postData.source}
-					github={postData.github}
-				/>
+					<ActionButtons
+						source={postData.source}
+						github={postData.github}
+					/>
 
-				<div
-					className={`animate__animated animate__delay__500ms animate__fadeInUp`}
-					dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-				/>
-			</article>
+					<div
+						className={`animate__animated animate__delay__500ms animate__fadeInUp`}
+						dangerouslySetInnerHTML={{
+							__html: postData.contentHtml,
+						}}
+					/>
+
+					<Comments />
+				</article>
 			</main>
 		</div>
 	)
@@ -68,7 +72,9 @@ export default function Post({ postData }) {
 function BackToHomeLink() {
 	return (
 		<div className={layoutStyles.backToHome}>
-			<Link scroll={false} href="/">← Back to All Apps</Link>
+			<Link scroll={false} href="/">
+				← Back to All Apps
+			</Link>
 		</div>
 	)
 }
@@ -117,19 +123,19 @@ function AppTags({ tags }) {
 	)
 }
 
-function TechStackIcons({stack}) {
+function TechStackIcons({ stack }) {
 	return (
 		<div className={utilStyles.techStackIconsContainer}>
 			{stack.map((tech, id) => (
 				<div key={id} className={utilStyles.techStackIconDiv}>
 					<img
-					src={`/stack/${tech}.svg`}
-					alt={tech}
-					title={tech}
-					height={45}
-					width={45}
-					className={`${utilStyles.techStackIcon} animate__animated animate__rollIn`}
-				/>
+						src={`/stack/${tech}.svg`}
+						alt={tech}
+						title={tech}
+						height={45}
+						width={45}
+						className={`${utilStyles.techStackIcon} animate__animated animate__rollIn`}
+					/>
 				</div>
 			))}
 		</div>
@@ -137,7 +143,6 @@ function TechStackIcons({stack}) {
 }
 
 function AmongUsButton({ github }) {
-
 	let handleClick = () => {
 		window.open(github, "_blank")
 	}
@@ -194,9 +199,8 @@ function AmongUsButton({ github }) {
 }
 
 function LaunchButton({ source }) {
-
 	let handleClick = () => {
-		window.open(source, '_blank')
+		window.open(source, "_blank")
 	}
 
 	return (
