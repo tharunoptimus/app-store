@@ -140,7 +140,23 @@ function TechStackIcons({ stack }) {
 	return (
 		<div className={utilStyles.techStackIconsContainer}>
 			{stack.map((tech, id) => (
-				<div key={id} className={utilStyles.techStackIconDiv}>
+				<TechStackIcon key={id} tech={tech} />
+			))}
+		</div>
+	)
+}
+
+function TechStackIcon({tech}) {
+
+	let handleClick = () => {
+		if(typeof window !== "undefined") {
+			localStorage.setItem("query", tech)
+		}
+	}
+
+	return (
+		<Link href={`/`} onClick={handleClick}>
+			<div className={utilStyles.techStackIconDiv}>
 					<img
 						src={`/stack/${tech}.svg`}
 						alt={tech}
@@ -150,9 +166,9 @@ function TechStackIcons({ stack }) {
 						className={`${utilStyles.techStackIcon} animate__animated animate__rollIn`}
 					/>
 				</div>
-			))}
-		</div>
+		</Link>
 	)
+
 }
 
 function AmongUsButton({ github }) {
