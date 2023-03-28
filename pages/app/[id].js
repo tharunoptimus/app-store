@@ -122,9 +122,8 @@ function AppTags({ tags }) {
 }
 
 function Tag({ tag }) {
-
 	let handleClick = () => {
-		if(typeof window !== "undefined") {
+		if (typeof window !== "undefined") {
 			localStorage.setItem("query", tag)
 		}
 	}
@@ -146,10 +145,9 @@ function TechStackIcons({ stack }) {
 	)
 }
 
-function TechStackIcon({tech}) {
-
+function TechStackIcon({ tech }) {
 	let handleClick = () => {
-		if(typeof window !== "undefined") {
+		if (typeof window !== "undefined") {
 			localStorage.setItem("query", tech)
 		}
 	}
@@ -157,18 +155,17 @@ function TechStackIcon({tech}) {
 	return (
 		<Link href={`/`} onClick={handleClick}>
 			<div className={utilStyles.techStackIconDiv}>
-					<img
-						src={`/stack/${tech}.svg`}
-						alt={tech}
-						title={tech}
-						height={45}
-						width={45}
-						className={`${utilStyles.techStackIcon} animate__animated animate__rollIn`}
-					/>
-				</div>
+				<img
+					src={`/stack/${tech}.svg`}
+					alt={tech}
+					title={tech}
+					height={45}
+					width={45}
+					className={`${utilStyles.techStackIcon} animate__animated animate__rollIn`}
+				/>
+			</div>
 		</Link>
 	)
-
 }
 
 function AmongUsButton({ github }) {

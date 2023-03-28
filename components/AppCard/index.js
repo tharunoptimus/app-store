@@ -140,7 +140,7 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 					/>
 				</div>
 			)}
-			
+
 			<h2 className={utilStyles.headingLg}>
 				{returnCategoryString(category)}
 			</h2>
@@ -186,17 +186,15 @@ export default function AppContainer({ apps }) {
 		setQueryText(e.target.value)
 	}
 
-	
 	useEffect(() => {
 		let query = localStorage?.getItem("query")
-	
-		if(query != "" && query != null) {
-			handleInputChange({target: {value: query}})
+
+		if (query != "" && query != null) {
+			handleInputChange({ target: { value: query } })
 			setQueryText(query)
 		}
 
 		localStorage?.setItem("query", "")
-
 	})
 
 	return (
