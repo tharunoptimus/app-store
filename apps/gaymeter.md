@@ -13,3 +13,7 @@ stack: [android, javascript, worksoffline]
 # About the App
 
 Introducing Gay Meter - no offense, a fun app that does some math on a string and returns a percent that you can prank with your friends. Not necessarily their real ethnicity. Just enter a name and let the fun begin.
+
+# Screenshot
+
+![Home Page](/screenshots/gaymeter.webp)
