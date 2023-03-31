@@ -1,0 +1,27 @@
+.techStackContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8rem;
+}
+
+.containerTitle {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.techStackCard img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #0000002b;
+}
+
+.techStackCard img:hover {
+    background-color: #fafafa;
+}
