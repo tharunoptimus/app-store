@@ -38,7 +38,7 @@ export default function Post({ appData }) {
 			</Head>
 			<main>
 				<article>
-					<BackToHomeLink />
+					<BackToLocationLink route="/app" content="Back to Apps" needBottomMargin={true} />
 
 					<AppImage src={appData.iconSrc} title={appData.title} />
 
@@ -69,11 +69,22 @@ export default function Post({ appData }) {
 	)
 }
 
-function BackToHomeLink() {
+export function BackToLocationLink({
+	route,
+	content,
+	needBottomMargin = false,
+}) {
 	return (
 		<div className={layoutStyles.backToHome}>
-			<Link scroll={false} href="/app">
-				← Back to All Apps
+			<Link scroll={false} href={route}>
+				<span
+					className={`${layoutStyles.backToLocation} ${
+						needBottomMargin ? layoutStyles.marginBottom3Rem : ""
+					}`}
+				>
+					<img src="/left.svg" alt="back" height={35} width={35} />
+					{content}
+				</span>
 			</Link>
 		</div>
 	)
