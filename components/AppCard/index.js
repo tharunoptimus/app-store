@@ -131,14 +131,7 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 	return (
 		<div ref={divRef} className={styles.categoryDiv}>
 			{shouldShowCategoryPic && (
-				<div className={styles.categoryLeft}>
-					<img
-						className={styles.categoryIcon}
-						width={300}
-						src={`/categories/${category}.webp`}
-						alt={category}
-					/>
-				</div>
+				<CategoryPic category={category} />
 			)}
 
 			<h2 className={utilStyles.headingLg}>
@@ -146,6 +139,45 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 			</h2>
 
 			<Apps apps={appsInCategory} />
+		</div>
+	)
+}
+
+function CategoryPic({ category }) {
+
+	useEffect(() => {
+		let classList = ["animate__animated", "animate__zoomIn"]
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add(...classList)
+						entry.target.classList.remove(`${styles.hidden}`)
+						observer.unobserve(entry.target)
+					}
+				})
+			},
+			{
+				root: null,
+				rootMargin: "20px",
+				threshold: 0.1,
+			}
+		)
+
+		observer.observe(divRef.current)
+	}, [])
+
+	let divRef = useRef(null)
+
+	return (
+		<div className={styles.categoryLeft} ref={divRef}>
+			<img
+				className={styles.categoryIcon}
+				width={300}
+				src={`/categories/${category}.webp`}
+				alt={category}
+			/>
 		</div>
 	)
 }
