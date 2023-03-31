@@ -7,15 +7,10 @@ import { Typewriter } from "react-simple-typewriter"
 export default function Author() {
 	return (
 		<>
-			<p className={`${authorStyles.aboutAuthor} animate__animated animate__bounceInUp`}>
-				<Typewriter
-					words={["Web Apps", "PWAs", "Packages", "APIs", "Extensions", "Languages", "Games", "XR Apps", "Apps"]}
-					loop={5}
-					typeSpeed={70}
-					deleteSpeed={50}
-					delaySpeed={1000}
-				/>
-				{" by "}
+			<p
+				className={`${authorStyles.aboutAuthor} animate__animated animate__bounceInUp`}
+			>
+				{"Apps by "}
 				<a
 					href={`https://github.com/${githubUserName}`}
 					target="_blank"
@@ -29,13 +24,37 @@ export default function Author() {
 	)
 }
 
+function TypeWriterText() {
+	return (
+		<Typewriter
+			words={[
+				"Web Apps",
+				"PWAs",
+				"Packages",
+				"APIs",
+				"Extensions",
+				"Languages",
+				"Games",
+				"XR Apps",
+				"Apps",
+			]}
+			loop={5}
+			typeSpeed={70}
+			deleteSpeed={50}
+			delaySpeed={1000}
+		/>
+	)
+}
+
 function ExploreApps() {
 	return (
 		<div
 			className={`${utilStyles.exploreAppsDiv} animate__animated animate__bounceInUp`}
 		>
 			<Link href="/app">
-				<span className={utilStyles.exploreAppsSpan}>Explore Apps</span>
+				<span className={utilStyles.exploreAppsSpan}>
+					Explore <TypeWriterText />
+				</span>
 			</Link>
 		</div>
 	)
