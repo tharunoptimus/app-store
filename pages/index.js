@@ -4,8 +4,10 @@ import { getSortedAppsData } from "../lib/apps"
 import { siteTitle, authorName, githubUserName } from "../components/config"
 import styles from "../components/layout.module.css"
 import Author from "../components/author"
+import SellingPoint from "../components/SellingPoint"
+import TechStack from "../components/TechStack"
 
-export default function Home({ allAppsData }) {
+export default function Home() {
 	return (
 		<div className={styles.container} style={{maxWidth: "65rem"}}>
 			<Head>
@@ -26,9 +28,11 @@ export default function Home({ allAppsData }) {
 				<section
 					className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
 				>
-					<ExploreApps />
+					<TechStack />
+					<SellingPoint />
 				</section>
 			</main>
+			<Footer />
 		</div>
 	)
 }
