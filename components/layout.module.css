@@ -10,6 +10,11 @@
 	align-items: center;
 }
 
+.footer {
+	margin-top: 2rem;
+	text-align: center;
+}
+
 .marginBottom3Rem {
 	margin: 0 0 3rem;
 }
