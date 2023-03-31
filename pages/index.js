@@ -1,10 +1,8 @@
 import Head from "next/head"
-import Link from "next/link"
 import utilStyles from "../styles/utils.module.css"
 import { getSortedAppsData } from "../lib/apps"
 import { siteTitle, authorName, githubUserName } from "../components/config"
 import styles from "../components/layout.module.css"
-import AppContainer from "../components/AppCard"
 import Author from "../components/author"
 
 export default function Home({ allAppsData }) {
@@ -53,16 +51,11 @@ function Header() {
 	)
 }
 
-
-function ExploreApps() {
+function Footer() {
 	return (
-		<div
-			className={`${utilStyles.exploreAppsDiv} animate__animated animate__bounceInUp`}
-		>
-			<Link href="/app">
-				<span className={utilStyles.exploreAppsSpan}>Explore Apps</span>
-			</Link>
-		</div>
+		<footer className={styles.footer}>
+			{`All Rights Reserved © ${new Date().getFullYear()} ${authorName} | Apps`}
+		</footer>
 	)
 }
 
