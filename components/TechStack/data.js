@@ -32,7 +32,7 @@ let data = [
 		imgSrc: "/stack/html.svg",
 	},
 	{
-		title: "Javascript",
+		title: "JavaScript",
 		imgSrc: "/stack/javascript.svg",
 	},
 	{
@@ -48,11 +48,11 @@ let data = [
 		imgSrc: "/stack/mux.svg",
 	},
 	{
-		title: "Next.js",
+		title: "Next.JS",
 		imgSrc: "/stack/nextjs.svg",
 	},
 	{
-		title: "Node.js",
+		title: "Node.JS",
 		imgSrc: "/stack/nodejs.svg",
 	},
 	{
@@ -68,7 +68,7 @@ let data = [
 		imgSrc: "/stack/react.svg",
 	},
 	{
-		title: "Typescript",
+		title: "TypeScript",
 		imgSrc: "/stack/typescript.svg",
 	},
 	{
