@@ -5,7 +5,6 @@ import { getSortedAppsData } from "../../lib/apps"
 import { siteTitle, authorName, githubUserName } from "../../components/config"
 import styles from "../../components/layout.module.css"
 import AppContainer from "../../components/AppCard"
-import Author from "../../components/author"
 
 export default function Home({ allAppsData }) {
 	return (
@@ -32,24 +31,6 @@ export default function Home({ allAppsData }) {
 				</section>
 			</main>
 		</div>
-	)
-}
-
-function Header() {
-	return (
-		<header className={styles.header}>
-			<img
-				src="/images/laptopguy.webp"
-				className={`${utilStyles.borderCircle} animate__animated animate__bounceInDown`}
-				height={350}
-				width={350}
-				alt={authorName}
-			/>
-
-			<h1 className={utilStyles.heading2Xl}>
-				<Author />
-			</h1>
-		</header>
 	)
 }
 
