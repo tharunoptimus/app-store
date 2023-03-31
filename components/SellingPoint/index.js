@@ -1,5 +1,6 @@
 import styles from "./sellingPoint.module.css"
 import data from "./data"
+import { useEffect, useRef } from "react"
 
 export default function SellingPoint() {
 	return (
@@ -15,8 +16,34 @@ export default function SellingPoint() {
 }
 
 function SellingPointCard({ point }) {
+
+    let divRef = useRef(null)
+
+    useEffect(() => {
+		let classList = ["animate__animated", "animate__fadeInUp"]
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add(...classList)
+						entry.target.classList.remove(`${styles.hidden}`)
+						observer.unobserve(entry.target)
+					}
+				})
+			},
+			{
+				root: null,
+				rootMargin: "20px",
+				threshold: 0.1,
+			}
+		)
+
+		observer.observe(divRef.current)
+	}, [])
+
 	return (
-		<div className={styles.sellingPointCard}>
+		<div className={styles.sellingPointCard} ref={divRef}>
 			<img src={point.imgSrc} alt={point.title} height={200} width={200} />
 			<h3 className={styles.sellingPointTitle}>{point.title}</h3>
 			<p className={styles.sellingPointDescription}>
