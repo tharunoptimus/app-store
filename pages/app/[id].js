@@ -72,7 +72,7 @@ export default function Post({ appData }) {
 function BackToHomeLink() {
 	return (
 		<div className={layoutStyles.backToHome}>
-			<Link scroll={false} href="/">
+			<Link scroll={false} href="/app">
 				← Back to All Apps
 			</Link>
 		</div>
@@ -129,7 +129,7 @@ function Tag({ tag }) {
 	}
 
 	return (
-		<Link href={`/`} onClick={handleClick}>
+		<Link href={`/app`} onClick={handleClick}>
 			<span className={utilStyles.tag}>{tag}</span>
 		</Link>
 	)
@@ -153,7 +153,7 @@ function TechStackIcon({ tech }) {
 	}
 
 	return (
-		<Link href={`/`} onClick={handleClick}>
+		<Link href={`/app`} onClick={handleClick}>
 			<div className={utilStyles.techStackIconDiv}>
 				<img
 					src={`/stack/${tech}.svg`}
