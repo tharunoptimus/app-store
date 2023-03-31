@@ -104,16 +104,19 @@ function AppCategory({ apps, shouldShowCategoryPic }) {
 
 function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 	let divRef = useRef(null)
+	let animation = "animate__fadeInUp"
 
 	useEffect(() => {
-		let classList = ["animate__animated", "animate__fadeInUp"]
+		let classList = ["animate__animated", animation]
 
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
-						entry.target.classList.add(...classList)
-						entry.target.classList.remove(`${styles.hidden}`)
+						if (entry.target.previousElementSibling !== null) {
+							entry.target.classList.remove("animate__fadeInUp")
+							entry.target.classList.add(...classList)
+						}
 						observer.unobserve(entry.target)
 					}
 				})
@@ -126,13 +129,18 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 		)
 
 		observer.observe(divRef.current)
+
+		setTimeout(() => {
+			divRef?.current?.classList?.remove(...classList)
+		}, 800)
 	}, [])
 
 	return (
-		<div ref={divRef} className={styles.categoryDiv}>
-			{shouldShowCategoryPic && (
-				<CategoryPic category={category} />
-			)}
+		<div
+			ref={divRef}
+			className={`${styles.categoryDiv} animate__animated ${animation}`}
+		>
+			{shouldShowCategoryPic && <CategoryPic category={category} />}
 
 			<h2 className={utilStyles.headingLg}>
 				{returnCategoryString(category)}
@@ -144,7 +152,6 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 }
 
 function CategoryPic({ category }) {
-
 	useEffect(() => {
 		let classList = ["animate__animated", "animate__zoomIn"]
 
