@@ -9,7 +9,7 @@ import Author from "../components/author"
 
 export default function Home({ allAppsData }) {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} style={{maxWidth: "65rem"}}>
 			<Head>
 				<link
 					rel="icon"
