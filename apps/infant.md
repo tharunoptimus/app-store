@@ -15,3 +15,7 @@ Introducing Infant Lang - an esoteric programming language designed to be simple
 The language features simple variables, a pointer, and a memory variable, and works exclusively with natural numbers. With ASCII encoding, you can generate output using the print and char functions, allowing you to create a wide range of programs.
 
 Infant Lang is perfect for anyone who wants to learn the basics of programming in a fun and engaging way. With its simple syntax and powerful features, Infant Lang is sure to inspire the next generation of programmers.
+
+# Screenshot
+
+![Home Page](/screenshots/infant.webp)

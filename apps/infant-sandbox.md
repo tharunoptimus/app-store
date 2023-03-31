@@ -15,3 +15,7 @@ stack: [go, mux]
 Introducing Infant Lang Sandbox API, the ultimate solution for testing Infant Lang code online. With our API, you can now send Infant Lang code as text and run it in a secure sandbox environment. Our sandbox environment allows you to test your Infant Lang code without the fear of damaging your device or system.
 
 With Infant Lang Sandbox API, you can now write and test your Infant Lang code from anywhere in the world. Whether you're a beginner or an experienced Infant Lang developer, our API makes it easy to test your code and get the output as text. So why wait? Try Infant Lang Sandbox API today and experience the power of testing your code online.
+
+# Screenshot
+
+![API Page](/screenshots/infant-sandbox.webp)

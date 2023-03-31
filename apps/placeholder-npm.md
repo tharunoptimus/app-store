@@ -17,3 +17,7 @@ Introducing the Placeholder Image NPM Package, the perfect solution for generati
 Simply install the package, and you'll be able to generate placeholder images with just a few lines of code. And with support for all major image formats, including JPEG, PNG, and GIF, you can be sure that your generated images will be compatible with any application or website.
 
 With the Placeholder Image NPM Package, you'll be able to streamline your workflow and save valuable development time. So why wait? Get started today and take your NodeJS applications to the next level!
+
+# Screenshot
+
+![NPM Package Page](/screenshots/placeholder-npm.webp)
