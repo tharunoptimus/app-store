@@ -38,6 +38,7 @@ function TypeWriterText() {
 				"XR Apps→",
 				"Apps→",
 			]}
+			loop={0}
 			typeSpeed={70}
 			deleteSpeed={50}
 			delaySpeed={500}
