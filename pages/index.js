@@ -42,8 +42,8 @@ function Header() {
 	return (
 		<header className={styles.header}>
 			<img
-				src="/images/laptopguy.webp"
-				className={`${utilStyles.borderCircle} animate__animated animate__bounceInDown`}
+				src={`https://github.com/${githubUserName}.png`}
+				className={`${utilStyles.borderCircle} animate__animated animate__jackInTheBox`}
 				height={350}
 				width={350}
 				alt={authorName}
