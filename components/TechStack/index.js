@@ -1,10 +1,12 @@
 import data from "./data"
 import styles from "./techStack.module.css"
 import { useEffect, useRef } from "react"
+import { SkillHeading } from "../SellingPoint"
 
 export default function TechStack() {
 	return (
 		<div className={styles.techStackContainer}>
+            <SkillHeading title={"My Tech Stack"} subtitle={"Stuff I'm familiar with"} />
 
             <span className={styles.containerTitle}>My Tech Stack</span>
 

@@ -6,7 +6,7 @@ export default function SellingPoint() {
 	return (
 		<div className={styles.sellingPointContainer}>
 
-            <span className={styles.containerTitle}>Stuff About Myself</span>
+			<SkillHeading title={"What I bring to the table"} subtitle={"Stuff About Myself"} />
 
 			{data.map((point, id) => (
 				<SellingPointCard key={id} point={point} />
