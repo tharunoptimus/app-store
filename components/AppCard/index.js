@@ -123,7 +123,7 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 			},
 			{
 				root: null,
-				rootMargin: "100px",
+				rootMargin: "140px",
 				threshold: 0.1,
 			}
 		)
@@ -152,33 +152,9 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 }
 
 function CategoryPic({ category }) {
-	useEffect(() => {
-		let classList = ["animate__animated", "animate__zoomIn"]
-
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add(...classList)
-						entry.target.classList.remove(`${styles.hidden}`)
-						observer.unobserve(entry.target)
-					}
-				})
-			},
-			{
-				root: null,
-				rootMargin: "20px",
-				threshold: 0.1,
-			}
-		)
-
-		observer.observe(divRef.current)
-	}, [])
-
-	let divRef = useRef(null)
 
 	return (
-		<div className={styles.categoryLeft} ref={divRef}>
+		<div className={styles.categoryLeft}>
 			<img
 				className={styles.categoryIcon}
 				width={300}
