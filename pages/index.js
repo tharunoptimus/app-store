@@ -63,6 +63,12 @@ function Footer() {
 	)
 }
 
+function MouseScrollIcon() {
+	return (
+		<div className={styles.iconScroll}> </div>
+	)
+}
+
 export async function getStaticProps() {
 	const allAppsData = getSortedAppsData()
 	return {

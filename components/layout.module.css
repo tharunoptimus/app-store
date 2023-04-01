@@ -4,7 +4,8 @@
 	margin: 3rem auto 2rem;
 }
 
-.header, .footer {
+.header,
+.footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,6 +14,57 @@
 .footer {
 	margin-top: 2rem;
 	text-align: center;
+}
+
+.iconScroll,
+.iconScroll:before {
+	position: absolute;
+	left: 50%;
+}
+
+.iconScroll {
+	width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    margin-top: 40px;
+    box-shadow: inset 0 0 0 1px #0000006e;
+    border-radius: 25px;
+}
+
+.iconScroll:before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	background: #0000007d;
+	margin-left: -4px;
+	top: 8px;
+	border-radius: 4px;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: scroll;
+	animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(46px);
+	}
+}
+
+@keyframes scroll {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(46px);
+	}
 }
 
 .marginBottom3Rem {
@@ -27,17 +79,24 @@
 
 .backToLocation {
 	display: flex;
-    align-items: center;
-    justify-content: flex-start;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .backToLocation img {
-	filter: invert(20%) sepia(75%) saturate(3294%) hue-rotate(203deg) brightness(88%) contrast(101%);
+	filter: invert(20%) sepia(75%) saturate(3294%) hue-rotate(203deg)
+		brightness(88%) contrast(101%);
 }
 
 @media (prefers-color-scheme: dark) {
 	.backToLocation img {
-		filter: invert(47%) sepia(73%) saturate(2145%) hue-rotate(190deg) brightness(102%) contrast(104%);
+		filter: invert(47%) sepia(73%) saturate(2145%) hue-rotate(190deg)
+			brightness(102%) contrast(104%);
 	}
-	
+	.iconScroll {
+		box-shadow: inset 0 0 0 1px #ffffff60;
+	}
+	.iconScroll:before {
+		background: #fff;
+	}
 }
