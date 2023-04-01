@@ -1,0 +1,44 @@
+.topBar {
+	background: black;
+	border-bottom: 1px solid #fafafa4d;
+	box-shadow: 0px 1px 20px 1px #fafafa4d;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem 1rem;
+	z-index: 2;
+	transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.topBarLeft {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 0.9rem;
+}
+
+.topBarLeft img {
+	border-radius: 9999px;
+}
+
+.topBar button {
+	display: inline-block;
+	background: #8e44ad;
+	color: white;
+	padding: 0.4em 1.5em;
+	border-radius: 15px;
+	font-size: 0.9rem;
+	outline: none;
+	font-weight: 400;
+	letter-spacing: normal;
+	border: none;
+	cursor: pointer;
+}
+
+.topBar button:hover {
+	background: #9b59b6;
+}
