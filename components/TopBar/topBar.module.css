@@ -1,11 +1,9 @@
 .topBar {
-	background: black;
-	border-bottom: 1px solid #fafafa4d;
-	box-shadow: 0px 1px 20px 1px #fafafa4d;
+	background: white;
+	box-shadow: 0px 1px 20px 1px #00000052;
 	position: fixed;
 	left: 0;
 	width: 100%;
-	display: block;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -41,4 +39,12 @@
 
 .topBar button:hover {
 	background: #9b59b6;
+}
+
+@media (prefers-color-scheme: dark) {
+	.topBar {
+		background: black;
+		border-bottom: 1px solid #fafafa4d;
+		box-shadow: 0px 1px 20px 1px #fafafa4d;
+	}
 }
