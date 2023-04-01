@@ -34,7 +34,7 @@ function SellingPointCard({ point }) {
 			},
 			{
 				root: null,
-				rootMargin: "20px",
+				rootMargin: "100px",
 				threshold: 0.1,
 			}
 		)
@@ -49,6 +49,42 @@ function SellingPointCard({ point }) {
 			<p className={styles.sellingPointDescription}>
 				{point.description}
 			</p>
+		</div>
+	)
+}
+
+export function SkillHeading({ title, subtitle }) {
+	
+	let divRef = useRef(null)
+
+	useEffect(() => {
+		let classList = ["animate__animated", "animate__fadeInUp"]
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add(...classList)
+						entry.target.classList.remove(`${styles.hidden}`)
+						observer.unobserve(entry.target)
+					}
+				})
+			},
+			{
+				root: null,
+				rootMargin: "50px",
+				threshold: 0.1,
+			}
+		)
+
+		observer.observe(divRef.current)
+	}, [])
+
+
+	return (
+		<div className={styles.skillHeading} ref={divRef}>
+			<h3 className={styles.skillTitle}>{title}</h3>
+			<p className={styles.skillSubtitle}>{subtitle}</p>
 		</div>
 	)
 }
