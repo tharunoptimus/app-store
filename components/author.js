@@ -28,17 +28,16 @@ function TypeWriterText() {
 	return (
 		<Typewriter
 			words={[
-				"Web Apps",
-				"PWAs",
-				"Packages",
-				"APIs",
-				"Extensions",
-				"Languages",
-				"Games",
-				"XR Apps",
-				"Apps",
+				"Web Apps→",
+				"PWAs→",
+				"Packages→",
+				"APIs→",
+				"Extensions→",
+				"Languages→",
+				"Games→",
+				"XR Apps→",
+				"Apps→",
 			]}
-			loop={5}
 			typeSpeed={70}
 			deleteSpeed={50}
 			delaySpeed={500}
