@@ -1,15 +1,21 @@
 import Head from "next/head"
+import { useState } from "react"
 import utilStyles from "../styles/utils.module.css"
 import { getSortedAppsData } from "../lib/apps"
-import { siteTitle, authorName, githubUserName } from "../components/config"
+import { siteTitle, githubUserName } from "../components/config"
 import styles from "../components/layout.module.css"
-import Author from "../components/author"
+import HeroBanner from "../components/HeroBanner"
+import TopBar from "../components/TopBar"
+import MouseScrollIcon from "../components/MouseScrollIcon"
+import Footer from "../components/Footer"
 import SellingPoint from "../components/SellingPoint"
 import TechStack from "../components/TechStack"
 
 export default function Home() {
+	let [shouldShow, setShouldShow] = useState(false)
+
 	return (
-		<div className={styles.container} style={{maxWidth: "65rem"}}>
+		<div className={styles.container} style={{ maxWidth: "65rem" }}>
 			<Head>
 				<link
 					rel="icon"
@@ -22,12 +28,18 @@ export default function Home() {
 				<title>{siteTitle}</title>
 			</Head>
 
-			<Header />
+			<HeroBanner setShouldShow={setShouldShow} />
 
 			<main>
 				<section
 					className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
 				>
+					<TopBar
+						actionLink={"/app"}
+						actionText={"Explore"}
+						shouldShow={shouldShow}
+					/>
+
 					<MouseScrollIcon />
 					<TechStack />
 					<SellingPoint />
@@ -35,38 +47,6 @@ export default function Home() {
 			</main>
 			<Footer />
 		</div>
-	)
-}
-
-function Header() {
-	return (
-		<header className={styles.header}>
-			<img
-				src={`https://github.com/${githubUserName}.png`}
-				className={`${utilStyles.borderCircle} animate__animated animate__jackInTheBox`}
-				height={350}
-				width={350}
-				alt={authorName}
-			/>
-
-			<h1 className={utilStyles.heading2Xl}>
-				<Author />
-			</h1>
-		</header>
-	)
-}
-
-function Footer() {
-	return (
-		<footer className={styles.footer}>
-			{`All Rights Reserved © ${new Date().getFullYear()} ${authorName} | Apps`}
-		</footer>
-	)
-}
-
-function MouseScrollIcon() {
-	return (
-		<div className={styles.iconScroll}> </div>
 	)
 }
 
