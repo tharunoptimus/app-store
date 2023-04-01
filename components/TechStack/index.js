@@ -7,16 +7,20 @@ export default function TechStack() {
 	return (
 		<div className={styles.techStackContainer}>
             <SkillHeading title={"My Tech Stack"} subtitle={"Stuff I'm familiar with"} />
-
-            <span className={styles.containerTitle}>My Tech Stack</span>
-
-			{data.map((tech, id) => (
-				<TechStackCard key={id} tech={tech} />
-			))}
+			<TechStackIconsContainer tech={data} />
 		</div>
 	)
 }
 
+function TechStackIconsContainer({ tech }) {
+    return (
+        <div className={styles.techStackIconsContainer}>
+            {tech.map((item, id) => (
+                <TechStackCard key={id} tech={item} />
+            ))}
+        </div>
+    )
+}
 
 function TechStackCard({ tech }) {
 
@@ -63,7 +67,7 @@ function TechStackCard({ tech }) {
     return (
         <div className={styles.techStackCard} ref={divRef}>
             <img
-                width={55}
+                width={80}
                 src={tech.imgSrc}
                 alt={tech.title}
                 title={tech.title}

@@ -1,13 +1,21 @@
 .techStackContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     margin-top: 8rem;
     max-width: 45rem;
     margin-left: auto;
     margin-right: auto;
+    min-height: 100vh;
+}
+
+.techStackIconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .containerTitle {
