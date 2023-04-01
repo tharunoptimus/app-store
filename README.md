@@ -1,27 +1,34 @@
-# Static export example
+# App Store
 
-This example show how to export to static HTML files your Next.js application fetching data from an API to generate a dynamic list of pages.
+## What was the necessity?
 
-When trying to run `npm start` it will build and export your pages into the `out` folder and serve them on `localhost:5000`.
+It's not fun to list every apps at places like portfolio, social media, etc. It's cringe too. So, I made this app to list all my apps at one place.
 
-## Deploy your own
+## How does it work?
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-static-export)
+No CMS, Just markdown. It's a static site generator. Just add a markdown file in `apps` folder and it will be listed in the app store.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-static-export)
+Every meta data will be taken from the config.js inside ./components
 
-## How to use
+## Tech Stack?
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- NextJS (for SSR)
+- gray-matter (for parsing markdown)
+- remark-html (for markdown to html)
 
-```bash
-npx create-next-app --example with-static-export with-static-export-app
-```
+### The stuff inside the app
 
-```bash
-yarn create next-app --example with-static-export with-static-export-app
-```
+- react-simple-typewriter (for typing effect)
+- fuse.js (for fuzzy search)
+- utteranc.es (for comments)
 
-```bash
-pnpm create next-app --example with-static-export with-static-export-app
-```
+## Why I didn't use i18n or next/image?
+
+I use Cloudflare Pages for hosting. It doesn't support i18n and next/image. So, I didn't use them. If you use Netlify or Vercel, you can use them.
+
+## How to use?
+
+- Fork this repo
+- Add your apps in `apps` folder
+- Add your meta data in `config.js` inside `./components`
+- Deploy it
