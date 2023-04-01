@@ -34,18 +34,20 @@ function AppCard({ app }) {
 	return (
 		<Link className={styles.link} href={`/app/${app.id}`}>
 			<div className={styles.appCard}>
-				<img
-					className={styles.icon}
-					src={app.iconSrc}
-					alt={app.title}
-					height={60}
-					width={60}
-				/>
-				<div className={styles.appRight}>
-					<span className={styles.appName}>{app.title}</span>
-					<p className={styles.appDescription}>
-						{app.shortDescription}
-					</p>
+				<div className={styles.appCardTop}>
+					<img
+						className={styles.icon}
+						src={app.iconSrc}
+						alt={app.title}
+						height={60}
+						width={60}
+					/>
+					<div className={styles.appRight}>
+						<span className={styles.appName}>{app.title}</span>
+						<p className={styles.appShortDescription}>
+							{app.shortDescription}
+						</p>
+					</div>
 				</div>
 			</div>
 		</Link>
@@ -152,7 +154,6 @@ function AppCategoryCard({ category, appsInCategory, shouldShowCategoryPic }) {
 }
 
 function CategoryPic({ category }) {
-
 	return (
 		<div className={styles.categoryLeft}>
 			<img
