@@ -28,6 +28,7 @@ export default function Home() {
 				<section
 					className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
 				>
+					<MouseScrollIcon />
 					<TechStack />
 					<SellingPoint />
 				</section>
