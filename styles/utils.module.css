@@ -101,10 +101,12 @@
 
 .techStackIcon {
 	background: #ffffff;
-	border-radius: 50%;
-	padding: 6px;
 	cursor: pointer;
 	transition: all 0.2s ease;
+	background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #0000002b;
 }
 
 .techStackIcon:hover {
