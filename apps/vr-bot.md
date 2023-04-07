@@ -16,4 +16,4 @@ Video Bot is an innovative educational tool that revolutionizes the way people l
 
 # Screenshot
 
-![WebXR App](/screenshots/vrbot.webp)
+![WebXR App](/screenshots/vr-bot.webp)

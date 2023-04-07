@@ -16,4 +16,4 @@ Meow It is a revolutionary social media app that allows you to connect with peop
 
 # Screenshot
 
-![Home Page](/screenshots/meowit.webp)
+![Home Page](/screenshots/meow-it.webp)

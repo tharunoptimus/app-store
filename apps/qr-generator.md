@@ -16,4 +16,4 @@ Introducing the QR Codes API - the simplest and most efficient way to generate c
 
 # Screenshot
 
-![API Page](/screenshots/qr.webp)
+![API Page](/screenshots/qr-generator.webp)
