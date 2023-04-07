@@ -1,7 +1,7 @@
 ---
 title: "URL Shortner"
 category: "pwa"
-preference: 1
+preference: 3
 tags: ["links", "url", "shortner"]
 iconSrc: "/icons/short.webp"
 shortDescription: "Shorten your URLs"

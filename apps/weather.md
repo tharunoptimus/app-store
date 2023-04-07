@@ -1,7 +1,7 @@
 ---
 title: "Weather App"
 category: "pwa"
-preference: 1
+preference: 2
 tags: ["weather", "api"]
 iconSrc: "/icons/weather.webp"
 shortDescription: "Know the weather!"

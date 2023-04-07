@@ -1,7 +1,7 @@
 ---
 title: "CSS Units"
 category: "extensions"
-preference: 1
+preference: 2
 tags: ["css", "units conversion", "extension"]
 iconSrc: "/icons/css.webp"
 shortDescription: "Convert CSS Units"
