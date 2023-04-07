@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import { githubUserName, siteTitle } from "../../components/config"
+import { githubUserName, siteTitle, hostedURL } from "../../components/config"
 import { getAllAppIds, getAppData } from "../../lib/apps"
 import layoutStyles from "../../components/layout.module.css"
 import utilStyles from "../../styles/utils.module.css"
@@ -32,8 +32,32 @@ export default function Post({ appData }) {
 					href={`https://github.com/${githubUserName}.png`}
 				/>
 				<meta name="description" content={siteTitle} />
-				<meta name="og:title" content={siteTitle} />
-				<meta name="twitter:card" content="summary_large_image" />
+
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={`${hostedURL}/app/${appData.id}`} />
+				<meta property="og:title" content={`${appData.title} - ${siteTitle}`} />
+				<meta
+					property="og:description"
+					content={`${appData.title} - ${siteTitle}`}
+				/>
+				<meta
+					property="og:image"
+					content={`${hostedURL}/icons/${appData.iconSrc.split("/").pop()}`}
+				/>
+
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content={`${hostedURL}/app/${appData.id}`} />
+				<meta property="twitter:title" content={`${appData.title} - ${siteTitle}`} />
+				<meta
+					property="twitter:description"
+					content={`${appData.title} - ${siteTitle}`}
+				/>
+				<meta
+					property="twitter:image"
+					content={`${hostedURL}/icons/${appData.iconSrc.split("/").pop()}`}
+				/>
+
+
 				<title>{appData.title}</title>
 			</Head>
 			<main>
