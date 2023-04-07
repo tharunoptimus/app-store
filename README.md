@@ -32,3 +32,5 @@ I use Cloudflare Pages for hosting. It doesn't support i18n and next/image. So, 
 - Add your apps in `apps` folder
 - Add your meta data in `config.js` inside `./components`
 - Deploy it
+
+Ye.
