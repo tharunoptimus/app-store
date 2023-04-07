@@ -1,7 +1,7 @@
 ---
 title: "Placeholder Image"
 category: "api"
-date: "2021-12-31"
+preference: 1
 tags: ["image", "generator"]
 iconSrc: "/icons/placeholder.webp"
 shortDescription: "Generate Placeholder Images"

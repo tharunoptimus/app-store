@@ -1,7 +1,7 @@
 ---
 title: "Grocery"
 category: "pwa"
-date: "2021-12-31"
+preference: 1
 tags: ["list", "grocery", "offline"]
 iconSrc: "/icons/grocery.webp"
 shortDescription: "List up your grocery"

@@ -1,7 +1,7 @@
 ---
 title: "Placeholder Image"
 category: "npm"
-date: "2021-12-31"
+preference: 1
 tags: ["generator", "images", "package"]
 iconSrc: "/icons/npm.webp"
 shortDescription: "Generate Placeholder Images"

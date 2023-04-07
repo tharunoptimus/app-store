@@ -1,7 +1,7 @@
 ---
 title: "Find Odd"
 category: "npm"
-date: "2021-12-31"
+preference: 1
 tags: ["game", "cli", "terminal", "odd"]
 iconSrc: "/icons/findodd.webp"
 shortDescription: "Find the sus word"

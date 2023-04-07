@@ -1,7 +1,7 @@
 ---
 title: "Talk"
 category: "webapp"
-date: "2021-12-31"
+preference: 5
 tags: ["talk", "messenger", "anonymous", "chat"]
 iconSrc: "/icons/talk.webp"
 shortDescription: "Anonymous Private Messenger"

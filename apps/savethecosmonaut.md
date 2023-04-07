@@ -1,7 +1,7 @@
 ---
 title: "Cosmonaut"
 category: "game"
-date: "2021-12-31"
+preference: 1
 tags: ["game", "web", "algorithms", "puzzle"]
 iconSrc: "/icons/savecosmonaut.webp"
 shortDescription: "Save the Cosmonaut"

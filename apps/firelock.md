@@ -1,7 +1,7 @@
 ---
 title: "Fire Lock"
 category: "mobile"
-date: "2021-12-31"
+preference: 1
 tags: ["twa", "fire", "otp", "generator", "authenticator", "passwordless"]
 iconSrc: "/icons/firelock.webp"
 shortDescription: "2FA OTP Generator"

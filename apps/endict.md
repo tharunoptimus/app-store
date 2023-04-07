@@ -1,7 +1,7 @@
 ---
 title: "Endict"
 category: "npm"
-date: "2021-12-31"
+preference: 1
 tags: ["dictionary", "cli", "terminal"]
 iconSrc: "/icons/endict.webp"
 shortDescription: "Dictionary on your terminal"

@@ -1,7 +1,7 @@
 ---
 title: "Predict Content"
 category: "ml"
-date: "2021-12-31"
+preference: 1
 tags: ["tool", "image", "algorithms", "machine learning", "real time"]
 iconSrc: "/icons/predictcontent.webp"
 shortDescription: "Predict Image Content"

@@ -1,7 +1,7 @@
 ---
 title: "Cool SW"
 category: "pwa"
-date: "2021-12-31"
+preference: 1
 tags: ["service worker", "generator", "tool", "instant"]
 iconSrc: "/icons/coolsw.webp"
 shortDescription: "Generate a Service Worker"

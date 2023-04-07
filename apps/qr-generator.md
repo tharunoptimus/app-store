@@ -1,7 +1,7 @@
 ---
 title: "QR Code"
 category: "api"
-date: "2021-12-31"
+preference: 1
 tags: ["QR", "code", "generator"]
 iconSrc: "/icons/qr.webp"
 shortDescription: "Generate QR Codes"

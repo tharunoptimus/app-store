@@ -1,7 +1,7 @@
 ---
 title: "Gay Meter"
 category: "mobile"
-date: "2021-12-31"
+preference: 1
 tags: ["twa", "tool", "fun", "game"]
 iconSrc: "/icons/gaymeter.webp"
 shortDescription: "Gay Meter - no offense"

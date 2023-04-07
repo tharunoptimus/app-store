@@ -1,7 +1,7 @@
 ---
 title: "Video Bot"
 category: "webxr"
-date: "2021-12-31"
+preference: 1
 tags: ["aframe", "video", "enhance", "bot"]
 iconSrc: "/icons/vrbot.webp"
 shortDescription: "Enhance learning with VR"

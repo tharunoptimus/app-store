@@ -1,7 +1,7 @@
 ---
 title: "Load Stats"
 category: "extensions"
-date: "2021-12-31"
+preference: 1
 tags: ["web", "load time", "chrome"]
 iconSrc: "/icons/loadstats.webp"
 shortDescription: "Load Stats of Websites"

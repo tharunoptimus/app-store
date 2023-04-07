@@ -1,7 +1,7 @@
 ---
 title: "Thunder Me"
 category: "webapp"
-date: "2021-12-31"
+preference: 6
 tags: ["messenger", "status", "social media"]
 iconSrc: "/icons/thunderme.webp"
 shortDescription: "Share your thoughts instantly"
