@@ -55,6 +55,11 @@ function AppCard({ app }) {
 }
 
 function Apps({ apps }) {
+
+	apps = apps.sort((a, b) => {
+		return a.preference - b.preference
+	})
+
 	return (
 		<div className={styles.apps}>
 			{apps.map((app) => (
