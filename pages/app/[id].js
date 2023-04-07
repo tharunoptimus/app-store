@@ -42,7 +42,7 @@ export default function Post({ appData }) {
 				/>
 				<meta
 					property="og:image"
-					content={`${hostedURL}/icons/${appData.iconSrc.split("/").pop()}`}
+					content={`${hostedURL}/screenshots/${appData.id}.webp`}
 				/>
 
 				<meta property="twitter:card" content="summary_large_image" />
@@ -54,7 +54,7 @@ export default function Post({ appData }) {
 				/>
 				<meta
 					property="twitter:image"
-					content={`${hostedURL}/icons/${appData.iconSrc.split("/").pop()}`}
+					content={`${hostedURL}/screenshots/${appData.id}.webp`}
 				/>
 
 
