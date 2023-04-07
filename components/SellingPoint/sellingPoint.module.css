@@ -27,6 +27,12 @@
 	margin: 0 auto;
 }
 
+.sellingPointCard:hover img {
+	-webkit-animation: float 3s ease-in-out infinite;
+	animation: float 3s ease-in-out infinite;
+	transition: all 0.3s ease-in-out;
+}
+
 .sellingPointTitle {
 	font-size: 1.3rem;
 	font-weight: 600;
@@ -64,6 +70,30 @@
 	font-weight: 900;
 	margin: 0;
 	margin-bottom: 1rem;
+}
+
+@-webkit-keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 @media screen and (max-width: 480px) {
