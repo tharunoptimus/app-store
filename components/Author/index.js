@@ -1,7 +1,7 @@
 import Link from "next/link"
 import authorStyles from "./author.module.css"
-import utilStyles from "../styles/utils.module.css"
-import { githubUserName } from "./config"
+import utilStyles from "../../styles/utils.module.css"
+import { githubUserName } from "../config"
 import { Typewriter } from "react-simple-typewriter"
 
 export default function Author() {

@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import { githubUserName, authorName } from "../config"
 import utilStyles from "../../styles/utils.module.css"
 import styles from "../../components/layout.module.css"
-import Author from "../author"
+import Author from "../Author"
 
 export default function HeroBanner({ setShouldShow }) {
 	let headerRef = useRef(null)
