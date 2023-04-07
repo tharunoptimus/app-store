@@ -10,6 +10,7 @@ import MouseScrollIcon from "../components/MouseScrollIcon"
 import Footer from "../components/Footer"
 import SellingPoint from "../components/SellingPoint"
 import TechStack from "../components/TechStack"
+import { StaryBackground } from "../components/BackgroundAnimations"
 
 export default function Home() {
 	let [shouldShow, setShouldShow] = useState(false)
@@ -34,6 +35,7 @@ export default function Home() {
 				<section
 					className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
 				>
+					<StaryBackground />
 					<TopBar
 						actionLink={"/app"}
 						actionText={"Explore"}
