@@ -2,7 +2,7 @@ import Head from "next/head"
 import { useState } from "react"
 import utilStyles from "../styles/utils.module.css"
 import { getSortedAppsData } from "../lib/apps"
-import { siteTitle, githubUserName } from "../components/config"
+import { siteTitle, githubUserName, hostedURL } from "../components/config"
 import styles from "../components/layout.module.css"
 import HeroBanner from "../components/HeroBanner"
 import TopBar from "../components/TopBar"
@@ -25,6 +25,30 @@ export default function Home() {
 				<meta name="description" content={siteTitle} />
 				<meta name="og:title" content={siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
+
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={hostedURL} />
+				<meta property="og:title" content={siteTitle} />
+				<meta
+					property="og:description"
+					content={siteTitle}
+				/>
+				<meta
+					property="og:image"
+					content={`${hostedURL}/images/ogimage.png`}
+				/>
+
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content={hostedURL} />
+				<meta property="twitter:title" content={siteTitle} />
+				<meta
+					property="twitter:description"
+					content={siteTitle}
+				/>
+				<meta
+					property="twitter:image"
+					content={`${hostedURL}/images/ogimage.png`}
+				/>
 
 				<title>{siteTitle}</title>
 			</Head>
