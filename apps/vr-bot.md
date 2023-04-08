@@ -1,12 +1,12 @@
 ---
-title: "Video Bot"
+title: "VR Enhanced Learning"
 category: "webxr"
 preference: 1
 tags: ["aframe", "video", "enhance", "bot"]
 iconSrc: "/icons/vrbot.webp"
 shortDescription: "Enhance learning with VR"
-source: "https://vr-bot.pages.dev/"
-github: "https://github.com/tharunoptimus/vr-bot"
+source: "https://vr-enhanced.pages.dev"
+github: "https://github.com/vr-enhanced-learning/vr-enhanced"
 stack: [html, css, javascript, webxr, worksoffline, aframe]
 ---
 
