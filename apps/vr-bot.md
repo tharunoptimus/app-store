@@ -12,7 +12,17 @@ stack: [html, css, javascript, webxr, worksoffline, aframe]
 
 # About the App
 
-Video Bot is an innovative educational tool that revolutionizes the way people learn by providing an immersive virtual reality experience. With this app, users can watch educational videos in VR, ask and answer questions at the end, request summaries, and even translate the content. Additionally, Video Bot provides a unique feature that converts the video content into 3D models to help users better understand the concepts being taught. This app is ideal for anyone who wants to take their learning experience to the next level and make the most of the latest technology.
+Introducing a revolutionary webXR learning platform designed to empower children with an immersive educational experience like never before. This platform seamlessly blends videos with cutting-edge cognitive supplement tools, leveraging the power of advanced transformer models such as T5 and FLAN-T5. With the state-of-the-art technology, this brings a range of dynamic features to enhance learning and engagement.
+
+Imagine children watching educational videos and seamlessly transitioning to a world of interactive learning. This platform integrates evaluation tools that generate insightful questions, stimulating critical thinking and reinforcing comprehension. Students can effortlessly answer doubts and questions that arise during the video, fostering an interactive learning environment.
+
+But that's not all - this platform incorporates a powerful summarizer. After each video, students receive concise summaries, reinforcing key concepts and enhancing retention. The summarizer utilizes fine-tuned models trained on diverse datasets, including multi_news, ensuring accurate and comprehensive summaries.
+
+Furthermore, introducing an innovative text-3D model named STIR (Single Shot Translation Invariant Reconstruction), a groundbreaking feature allows students to generate 3D models based on their text inputs. Whether it's exploring the intricacies of the human heart or any other subject, STIR brings virtual objects to life, providing an immersive visual learning experience.
+
+To bring all these features together seamlessly, QuickXR was developed, a high-performance component framework specifically designed for this webXR environment. QuickXR overcomes limitations present in existing frameworks by supporting DOM nodes directly rendered by Chrome's Blink engine. It offers dynamic injection of text or 3D content, video streaming capabilities, interactive buttons, and text input options, enriching the virtual scene with unparalleled interactivity.
+
+And to tie it all together, the AI-powered model, TURB (Transformer-based Uncertainty Reduction and Balancing), ensures smooth coordination between the question generation, answer generation, and summarization processes. TURB leverages advanced transformer models fine-tuned on science-based contexts, incorporating data from trusted sources like Byju's and Aakash to provide reliable and accurate educational content.
 
 # Screenshot
 
