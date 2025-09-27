@@ -5,7 +5,7 @@ preference: 1
 tags: ["image", "generator"]
 iconSrc: "/icons/placeholder.webp"
 shortDescription: "Generate Placeholder Images"
-source: "https://placeholder-image-api.herokuapp.com/"
+source: "https://placeholder.cybernode.dev/"
 github: "https://github.com/tharunoptimus/placeholder-api"
 stack: [npm, express, nodejs]
 ---

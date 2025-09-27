@@ -5,7 +5,7 @@ preference: 3
 tags: ["links", "url", "shortner"]
 iconSrc: "/icons/short.webp"
 shortDescription: "Shorten your URLs"
-source: "http://short.cyclic.app/"
+source: "http://short.cybernode.dev/"
 github: "https://github.com/tharunoptimus/short"
 stack: [html, css, javascript, jquery, pwa]
 ---

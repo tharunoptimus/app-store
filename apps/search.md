@@ -5,7 +5,7 @@ preference: 4
 tags: ["search", "engine", "sites", "images"]
 iconSrc: "/icons/search.webp"
 shortDescription: "It's a search engine"
-source: "https://search.cyclic.app/"
+source: "https://search.cybernode.dev/"
 github: "https://github.com/tharunoptimus/search-engine"
 stack: [pug, css, javascript, jquery, express, mongodb, pwa]
 ---

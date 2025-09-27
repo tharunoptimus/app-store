@@ -5,7 +5,7 @@ preference: 3
 tags: ["paint", "sync", "collaborate", "canvas"]
 iconSrc: "/icons/paint.webp"
 shortDescription: "Shareable Paint App"
-source: "https://paint.cyclic.app/"
+source: "https://paint.cybernode.dev/"
 github: "https://github.com/tharunoptimus/paint"
 stack: [pug, css, javascript, express, mongodb, nodejs, pwa]
 ---

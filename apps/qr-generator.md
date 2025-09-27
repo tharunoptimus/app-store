@@ -5,7 +5,7 @@ preference: 1
 tags: ["QR", "code", "generator"]
 iconSrc: "/icons/qr.webp"
 shortDescription: "Generate QR Codes"
-source: "https://qrapigen.herokuapp.com/?data=meow"
+source: "https://qr.cybernode.dev/?data=meow"
 github: "https://github.com/tharunoptimus/qrcode-generator-api.git"
 stack: [npm, express, nodejs]
 ---

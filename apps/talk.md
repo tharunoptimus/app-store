@@ -5,7 +5,7 @@ preference: 5
 tags: ["talk", "messenger", "anonymous", "chat"]
 iconSrc: "/icons/talk.webp"
 shortDescription: "Anonymous Private Messenger"
-source: "https://talk.adaptable.app/"
+source: "https://talk.cybernode.dev/"
 github: "https://github.com/tharunoptimus/talk"
 stack: [pug, css, javascript, jquery, express, mongodb, nodejs, pwa]
 ---

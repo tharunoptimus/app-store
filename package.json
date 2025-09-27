@@ -2,20 +2,20 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && next export",
-		"start": "next start",
-		"export": "next export"
+		"build": "next build",
+		"start": "serve out"
 	},
 	"dependencies": {
 		"date-fns": "^2.29.3",
 		"fuse.js": "^6.6.2",
 		"gray-matter": "^4.0.3",
-		"next": "^13.2.4",
+		"next": "^15.5.4",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-simple-typewriter": "^5.0.1",
 		"remark": "^14.0.2",
-		"remark-html": "^15.0.2"
+		"remark-html": "^15.0.2",
+		"serve": "^14.2.5"
 	},
 	"devDependencies": {
 		"@types/node": "18.15.5",

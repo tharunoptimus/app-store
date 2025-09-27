@@ -5,7 +5,7 @@ preference: 2
 tags: ["classroom", "google", "teacher", "student"]
 iconSrc: "/icons/classroom.webp"
 shortDescription: "Classroom Management"
-source: "https://classroom.adaptable.app/"
+source: "https://classroom.cybernode.dev/"
 github: "https://github.com/tharunoptimus/classroom"
 stack: [pug, css, bootstrap, javascript, jquery, express, mongodb, nodejs, pwa]
 ---

@@ -5,7 +5,7 @@ preference: 1
 tags: ["messenger", "status", "anonymous", "location"]
 iconSrc: "/icons/meowit.webp"
 shortDescription: "Location Based Social Media"
-source: "https://meowit.pages.dev/"
+source: "https://meowit.cybernode.dev/"
 github: "https://github.com/meow-it/"
 stack: [html, css, javascript, express, mongodb, pwa, worksoffline]
 ---
